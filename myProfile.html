@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Image/icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/output.css" />
+    <link rel="stylesheet" href="./style/Custom.css" />
+    <title>EvensPRO - Home</title>
+  </head>
+  <body>
+    <header class="h-auto bg-[#14213D] pb-40">
+      <!-- Navbar  -->
+      <nav class="navBar-fixed">
+        <div class="navBar mx-auto max-w-[1320px]">
+          <!-- Logo  -->
+          <a href="./home.html">
+            <img src="./Assets/logo-2.svg" alt="" class="h-8 sm:h-auto" />
+          </a>
+          <!-- Logo  -->
+          <!-- right side Of nav bar  -->
+          <div class="hidden lg:block">
+            <ul class="nav-links">
+              <li>
+                <a href="#"> Brows Event </a>
+              </li>
+              <li>
+                <a href="#"> Sign In </a>
+              </li>
+              <li>
+                <button class="btn btn-lg btn-primary">Buy Tickets</button>
+              </li>
+            </ul>
+          </div>
+          <div class="block lg:hidden">
+            <button
+              class="btn-primary rounded-md px-2"
+              type="button"
+              data-te-offcanvas-toggle
+              data-te-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <span class="sr-only"> Open menu </span>
+              <i class="bi bi-list text-2xl"></i>
+            </button>
+          </div>
+          <!-- right side Of nav bar  -->
+        </div>
+      </nav>
+      <!-- Navbar  -->
+      <!-- Navbar For Mobile Version  -->
+      <!-- <button
+        class="btn btn-lg bg-pink-400"
+       
+      >
+        Toggle right offcanvas
+      </button> -->
+
+      <!-- Navbar For Mobile Version  -->
+      <div
+        class="navbar-responsive"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+        data-te-offcanvas-init
+      >
+        <!--  Header Part Of Responsive navbar  -->
+        <div class="flex items-center justify-between p-4">
+          <h5
+            class="mb-0 font-semibold leading-normal"
+            id="offcanvasRightLabel"
+          ></h5>
+          <button
+            type="button"
+            class="close-btn-navbar"
+            data-te-offcanvas-dismiss
+          >
+            <span class="sr-only">Close Button </span>
+            <i class="bi bi-x-lg text-danger-600"></i>
+          </button>
+        </div>
+        <!--  Header Part Of Responsive navbar  -->
+        <!-- ! Main navbar Of Responsive navbar -->
+        <div class="offcanvas-body flex-grow overflow-y-auto p-4">
+          <ul class="nav-links-responsive">
+            <li>
+              <a href="#"> Brows Event </a>
+            </li>
+            <li>
+              <a href="#"> Sign In </a>
+            </li>
+            <li>
+              <button class="btn btn-lg btn-primary">Buy Tickets</button>
+            </li>
+          </ul>
+        </div>
+        <!-- ! Main navbar Of Responsive navbar -->
+      </div>
+      <!-- Navbar For Mobile Version  -->
+    </header>
+    <!-- Header Section  -->
+    <main class="mx-auto my-5 max-w-[1320px] px-4 text-center">
+      <section
+        class="flex flex-col items-start justify-center gap-3 lg:flex-row lg:justify-start"
+      >
+        <div
+          class="mx-auto h-96 w-full border bg-gray-50 p-3 shadow-2 md:w-full md:max-w-xs"
+        >
+          <div class="">
+            <img
+              class="mx-auto my-3 size-40 rounded-full object-cover ring-2 ring-[#FCA311] ring-offset-2"
+              src="./Assets/avatar.jpg"
+              alt="Default avatar"
+            />
+            <p class="text-2xl font-semibold uppercase text-slate-700">
+              John Doe
+            </p>
+            <p class="text-md mb-5 font-semibold text-slate-700">Student</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <button class="btn btn-profile active" id="profileBtn">
+              My Profile
+            </button>
+            <button class="btn btn-profile" id="ticketBtn">My Tickets</button>
+          </div>
+        </div>
+        <!-- My profile Part  -->
+        <div class="h-auto w-full border bg-gray-50 p-3" id="my-profile">
+          <div
+            class="mx-auto flex flex-col overflow-hidden rounded-lg bg-white px-8 py-6 shadow-md"
+          >
+            <div class="mb-8 flex items-center">
+              <img
+                class="mr-4 h-20 w-20 rounded-full"
+                src="./Assets/avatar.jpg"
+                alt="Profile Picture"
+              />
+              <div class="flex flex-col">
+                <h2 class="text-2xl font-bold text-gray-800">John Doe</h2>
+                <p class="text-sm text-gray-600">
+                  Student | Traveler | Music Lover
+                </p>
+              </div>
+            </div>
+
+            <div class="mb-2 flex items-center">
+              <p class="mr-4 text-lg font-semibold text-gray-800">Location:</p>
+              <p class="text-sm text-gray-600">New York City</p>
+            </div>
+
+            <div class="mb-2 flex items-center gap-5">
+              <p class="py-1 text-start text-lg font-semibold text-gray-800">
+                Interests:
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-blue-500 px-3 py-1 text-sm text-white"
+                  >Concerts</span
+                >
+                <span
+                  class="rounded-full bg-green-500 px-3 py-1 text-sm text-white"
+                  >Tech Workshops</span
+                >
+                <span
+                  class="rounded-full bg-purple-500 px-3 py-1 text-sm text-white"
+                  >AI Seminars</span
+                >
+              </div>
+            </div>
+            <div class="mt-6 border-t border-gray-200 pt-6 text-start">
+              <h3 class="mb-4 text-lg font-semibold text-gray-800">Settings</h3>
+
+              <div class="mb-6">
+                <p class="mb-2 text-lg font-semibold text-gray-800">
+                  Ticketing Preferences:
+                </p>
+                <div class="grid grid-cols-1 gap-4">
+                  <div
+                    class="mb-2 flex flex-wrap items-center gap-2 md:flex-nowrap"
+                  >
+                    <p class="mb-2 text-xl font-semibold text-gray-600">
+                      Notifications:
+                    </p>
+                    <select class="form-select rounded-md border px-3 py-1">
+                      <option>Email</option>
+                      <option>Push Notification</option>
+                      <option selected>Both</option>
+                      <option>None</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex space-x-7 text-gray-600">
+                <p class="mb-2 text-xl">Ticket History:</p>
+                <p class="text-xl">Tickets - <b>5</b></p>
+              </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-end">
+              <a href="#" class="text-sm text-blue-500 hover:underline"
+                ><img src="./Assets/logo-2.svg" class="h-5" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden h-auto w-full border bg-gray-50/50 p-3"
+          id="my-tickets"
+        >
+          <!-- Card -1 -->
+
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <h3
+              class="mb-4 border-2 px-5 py-4 text-3xl font-bold uppercase text-[#14213D]"
+            >
+              List of Tickets
+            </h3>
+            <table
+              class="w-full text-left text-sm text-gray-500 dark:text-gray-400 rtl:text-right"
+            >
+              <thead
+                class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400"
+              >
+                <tr>
+                  <th scope="col" class="px-6 py-3">No</th>
+                  <th scope="col" class="px-6 py-3">Event Name</th>
+                  <th scope="col" class="px-6 py-3">Topic</th>
+                  <th scope="col" class="px-6 py-3">Quantity</th>
+                  <th scope="col" class="px-6 py-3">Price</th>
+                  <th scope="col" class="px-6 py-3">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Card -1 -->
+        </div>
+        <!-- My profile Part  -->
+      </section>
+      <!-- Profile Section -->
+
+      <!-- Profile Section -->
+    </main>
+    <!-- Footer Section  -->
+
+    <footer class="mt-20 w-full bg-[#14213D] shadow dark:bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="https://www.royex.ae/"
+            class="mb-4 flex items-center space-x-3 sm:mb-0 rtl:space-x-reverse"
+          >
+            <img src="./Assets/Image/logo/logo.svg" class="" alt="evenspro" />
+          </a>
+          <ul
+            class="mb-6 flex flex-wrap items-center text-sm font-medium text-white dark:text-gray-400 sm:mb-0"
+          >
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8"
+        />
+        <span class="block text-sm text-white sm:text-center"
+          >© 2023
+          <a href="https://www.royex.ae/" class="hover:underline"
+            >Design and developed by Royex Technologies™</a
+          >.And Royex All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!-- Footer Section  -->
+    <!-- Footer Section  -->
+    <!-- Script js And Jquery  -->
+    <script src="./js/tw-elements.umd.min.js"></script>
+
+    <script>
+      const profileBtn = document.getElementById("profileBtn");
+      const ticketBtn = document.getElementById("ticketBtn");
+
+      profileBtn.addEventListener("click", () => {
+        document.getElementById("my-profile").classList.remove("hidden");
+        document.getElementById("my-tickets").classList.add("hidden");
+        profileBtn.classList.add("active");
+        ticketBtn.classList.remove("active");
+      });
+      ticketBtn.addEventListener("click", () => {
+        document.getElementById("my-tickets").classList.remove("hidden");
+        document.getElementById("my-profile").classList.add("hidden");
+        ticketBtn.classList.add("active");
+        profileBtn.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>

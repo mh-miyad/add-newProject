@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Image/icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/output.css" />
+    <link rel="stylesheet" href="./style/Custom.css" />
+    <title>EvensPRO - Home</title>
+  </head>
+  <body>
+    <header class="header-part">
+      <!-- Navbar  -->
+      <nav class="navBar-fixed">
+        <div class="navBar mx-auto max-w-[1320px]">
+          <!-- Logo  -->
+          <div>
+            <img src="./Assets/logo-2.svg" alt="" />
+          </div>
+          <!-- Logo  -->
+          <!-- right side Of nav bar  -->
+          <div class="hidden lg:block">
+            <ul class="nav-links">
+              <li>
+                <a href="#"> Brows Event </a>
+              </li>
+              <li>
+                <a href="#"> Sign In </a>
+              </li>
+              <li>
+                <button class="btn btn-lg btn-primary">Buy Tickets</button>
+              </li>
+            </ul>
+          </div>
+          <div class="block lg:hidden">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-te-offcanvas-toggle
+              data-te-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <span class="sr-only"> Open menu </span>
+              <i class="bi bi-list text-2xl"></i>
+            </button>
+          </div>
+          <!-- right side Of nav bar  -->
+        </div>
+      </nav>
+      <!-- Navbar  -->
+      <!-- Navbar For Mobile Version  -->
+      <!-- <button
+        class="btn btn-lg bg-pink-400"
+       
+      >
+        Toggle right offcanvas
+      </button> -->
+
+      <!-- Navbar For Mobile Version  -->
+      <div
+        class="navbar-responsive"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+        data-te-offcanvas-init
+      >
+        <!--  Header Part Of Responsive navbar  -->
+        <div class="flex items-center justify-between p-4">
+          <h5
+            class="mb-0 font-semibold leading-normal"
+            id="offcanvasRightLabel"
+          ></h5>
+          <button
+            type="button"
+            class="close-btn-navbar"
+            data-te-offcanvas-dismiss
+          >
+            <span class="sr-only">Close Button </span>
+            <i class="bi bi-x-lg text-danger-600"></i>
+          </button>
+        </div>
+        <!--  Header Part Of Responsive navbar  -->
+        <!-- ! Main navbar Of Responsive navbar -->
+        <div class="offcanvas-body flex-grow overflow-y-auto p-4">
+          <ul class="nav-links-responsive">
+            <li>
+              <a href="#"> Brows Event </a>
+            </li>
+            <li>
+              <a href="#"> Sign In </a>
+            </li>
+            <li>
+              <button class="btn btn-lg btn-primary">Buy Tickets</button>
+            </li>
+          </ul>
+        </div>
+        <!-- ! Main navbar Of Responsive navbar -->
+      </div>
+      <!-- Navbar For Mobile Version  -->
+
+      <!--  Header Content  -->
+      <div class="header-content">
+        <h1 class="text-stroke">
+          Welcome To Our <br />
+          <span class="header-image">
+            <img src="./Assets/Image/Group 1216404193.svg" class="" alt="" />
+          </span>
+          Online Ticketing System
+        </h1>
+        <button class="btn btn-lg btn-primary mt-4">Buy Tickets</button>
+      </div>
+      <!--  Header Content  -->
+    </header>
+    <main class="mx-auto mb-20 max-w-7xl">
+      <section class="my-10">
+        <!--  All Events Section -->
+
+        <div
+          class="mb-10 flex flex-col items-center justify-center gap-3 px-5 md:flex-row md:justify-between"
+        >
+          <h3 class="text-4xl font-bold md:text-5xl">All Events</h3>
+          <div class="flex gap-2">
+            <select class="input-select" name="eventPrice" id="eventPrice">
+              <option class="" value="0">Any Price</option>
+              <option value="0-250">AED 0-250</option>
+              <option value="251-500">AED 251-500</option>
+              <option value="501-750">AED 501-750</option>
+              <option value="751-1000">AED 751-1000</option>
+            </select>
+            <select
+              class="input-select"
+              name="price"
+              id="eventCategory"
+              name="Categories"
+            >
+              <option value="0">Select Category</option>
+              <option value="1">Business</option>
+              <option value="2">Charity &amp; Causes</option>
+              <option value="3">Community</option>
+              <option value="4">Auto, Boat &amp; Air</option>
+              <option value="5">Family &amp; Education</option>
+              <option value="6">Fashion</option>
+              <option value="7">Film &amp; Media</option>
+              <option value="8">Food &amp; Drink</option>
+              <option value="9">Government</option>
+              <option value="10">Health</option>
+              <option value="11">Hobbies</option>
+              <option value="12">Holiday</option>
+            </select>
+          </div>
+        </div>
+        <!--  All Events Section -->
+        <div
+          class="grid-col-1 grid items-stretch justify-center gap-7 sm:grid-cols-2 lg:grid-cols-3 lg:px-3 xl:grid-cols-3"
+        >
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+        </div>
+        <!-- ALL Cards END here  -->
+      </section>
+    </main>
+
+    <!-- Footer Section  -->
+
+    <footer class="bg-[#14213D] shadow dark:bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="https://www.royex.ae/"
+            class="mb-4 flex items-center space-x-3 sm:mb-0 rtl:space-x-reverse"
+          >
+            <img src="./Assets/Image/logo/logo.svg" class="" alt="evenspro" />
+          </a>
+          <ul
+            class="mb-6 flex flex-wrap items-center text-sm font-medium text-white dark:text-gray-400 sm:mb-0"
+          >
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8"
+        />
+        <span class="block text-sm text-white sm:text-center"
+          >© 2023
+          <a href="https://www.royex.ae/" class="hover:underline"
+            >Design and developed by Royex Technologies™</a
+          >.And Royex All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!-- Footer Section  -->
+    <!-- Footer Section  -->
+    <!-- Script js And Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/flowbite.js"></script>
+    <script src="./js/tw-elements.umd.min.js"></script>
+    <script src="./js/plugins/autoType.js"></script>
+    <script src="./js/custom.js" type="module"></script>
+  </body>
+</html>
