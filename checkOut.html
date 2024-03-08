@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Image/icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/output.css" />
+    <link rel="stylesheet" href="./style/Custom.css" />
+    <title>EvensPRO - Home</title>
+  </head>
+  <body>
+    <header class="header-part">
+      <!-- Navbar  -->
+      <nav class="navBar-fixed">
+        <div class="navBar mx-auto max-w-[1320px]">
+          <!-- Logo  -->
+          <div>
+            <img src="./Assets/logo-2.svg" alt="" />
+          </div>
+          <!-- Logo  -->
+          <!-- right side Of nav bar  -->
+          <div class="hidden lg:block">
+            <ul class="nav-links">
+              <li>
+                <a href="#"> Brows Event </a>
+              </li>
+              <li>
+                <a href="#"> Sign In </a>
+              </li>
+              <li>
+                <button class="btn btn-lg btn-primary">Buy Tickets</button>
+              </li>
+            </ul>
+          </div>
+          <div class="block lg:hidden">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-te-offcanvas-toggle
+              data-te-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <span class="sr-only"> Open menu </span>
+              <i class="bi bi-list text-2xl"></i>
+            </button>
+          </div>
+          <!-- right side Of nav bar  -->
+        </div>
+      </nav>
+      <!-- Navbar  -->
+      <!-- Navbar For Mobile Version  -->
+      <!-- <button
+        class="btn btn-lg bg-pink-400"
+       
+      >
+        Toggle right offcanvas
+      </button> -->
+
+      <!-- Navbar For Mobile Version  -->
+      <div
+        class="navbar-responsive"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+        data-te-offcanvas-init
+      >
+        <!--  Header Part Of Responsive navbar  -->
+        <div class="flex items-center justify-between p-4">
+          <h5
+            class="mb-0 font-semibold leading-normal"
+            id="offcanvasRightLabel"
+          ></h5>
+          <button
+            type="button"
+            class="close-btn-navbar"
+            data-te-offcanvas-dismiss
+          >
+            <span class="sr-only">Close Button </span>
+            <i class="bi bi-x-lg text-danger-600"></i>
+          </button>
+        </div>
+        <!--  Header Part Of Responsive navbar  -->
+        <!-- ! Main navbar Of Responsive navbar -->
+        <div class="offcanvas-body flex-grow overflow-y-auto p-4">
+          <ul class="nav-links-responsive">
+            <li>
+              <a href="#"> Brows Event </a>
+            </li>
+            <li>
+              <a href="#"> Sign In </a>
+            </li>
+            <li>
+              <button class="btn btn-lg btn-primary">Buy Tickets</button>
+            </li>
+          </ul>
+        </div>
+        <!-- ! Main navbar Of Responsive navbar -->
+      </div>
+      <!-- Navbar For Mobile Version  -->
+
+      <!--  Header Content  -->
+      <div class="header-content">
+        <h1>Product Details</h1>
+      </div>
+      <!--  Header Content  -->
+    </header>
+    <main class="mx-auto mb-20 min-h-96 max-w-7xl">
+      <section
+        class="mx-5 my-5 flex flex-col items-start justify-center gap-5 lg:flex-row"
+      >
+        <!--  left side Of main -->
+        <div
+          class="mx-auto w-full max-w-xl rounded-t-lg border border-gray-300"
+        >
+          <h3 class="caption-bottom py-4 text-center text-4xl font-bold">
+            Buyer Information
+          </h3>
+          <hr />
+          <section class="checkout-form px-5 pb-10 pt-3">
+            <form action="#!" method="get">
+              <h6>Contact information</h6>
+              <div class="form-control">
+                <label for="checkout-email">E-mail</label>
+                <div>
+                  <span class="fa fa-envelope"></span>
+                  <input
+                    type="email"
+                    id="checkout-email"
+                    name="checkout-email"
+                    placeholder="Enter your email..."
+                  />
+                </div>
+              </div>
+              <div class="form-control">
+                <label for="checkout-phone">Phone</label>
+                <div>
+                  <span class="fa fa-phone"></span>
+                  <input
+                    type="tel"
+                    name="checkout-phone"
+                    id="checkout-phone"
+                    placeholder="Enter you phone..."
+                  />
+                </div>
+              </div>
+              <br />
+              <h6>Shipping address</h6>
+              <div class="form-control">
+                <label for="checkout-name">Full name</label>
+                <div>
+                  <span class="fa fa-user-circle"></span>
+                  <input
+                    type="text"
+                    id="checkout-name"
+                    name="checkout-name"
+                    placeholder="Enter you name..."
+                  />
+                </div>
+              </div>
+              <div class="form-control">
+                <label for="checkout-address">Address</label>
+                <div>
+                  <span class="fa fa-home"></span>
+                  <input
+                    type="text"
+                    name="checkout-address"
+                    id="checkout-address"
+                    placeholder="Your address..."
+                  />
+                </div>
+              </div>
+              <div class="form-control">
+                <label for="checkout-city">City</label>
+                <div>
+                  <span class="fa fa-building"></span>
+                  <input
+                    type="text"
+                    name="checkout-city"
+                    id="checkout-city"
+                    placeholder="Your city..."
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-control">
+                  <label for="checkout-country">Country</label>
+                  <div>
+                    <span class="fa fa-globe"></span>
+                    <input
+                      type="text"
+                      name="checkout-country"
+                      id="checkout-country"
+                      placeholder="Your country..."
+                      list="country-list"
+                    />
+                    <datalist id="country-list">
+                      <option value="India"></option>
+                      <option value="USA"></option>
+                      <option value="Russia"></option>
+                      <option value="Japan"></option>
+                      <option value="Egypt"></option>
+                    </datalist>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="checkout-postal">Postal code</label>
+                  <div>
+                    <span class="fa fa-archive"></span>
+                    <input
+                      type="numeric"
+                      name="checkout-postal"
+                      id="checkout-postal"
+                      placeholder="Your postal code..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-control checkbox-control">
+                <input
+                  type="checkbox"
+                  name="checkout-checkbox"
+                  id="checkout-checkbox"
+                />
+                <label for="checkout-checkbox"
+                  >Save this information for next time</label
+                >
+              </div>
+              <div class="form-control-btn">
+                <button type="button" class="btn btn-primary mt-4 capitalize">
+                  checkout
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+        <!--  left side Of main -->
+        <!--  Right side Of main -->
+
+        <div
+          class="mx-auto w-full max-w-xl rounded-t-lg border border-gray-300"
+        >
+          <h3 class="caption-bottom py-4 text-center text-4xl font-bold">
+            Order Summary
+          </h3>
+          <hr />
+          <ul class="my-5 space-y-2 px-5 py-2 text-lg capitalize">
+            <li class="flex justify-between">
+              ticket Type : <span class="font-bold">Student</span>
+            </li>
+            <li class="flex justify-between">
+              price : <span class="font-bold">120</span>
+            </li>
+            <li class="flex justify-between">
+              Quantity : <span class="font-bold">5</span>
+            </li>
+            <li class="flex justify-between">
+              Subtotal : <span class="font-bold">600</span>
+            </li>
+          </ul>
+          <hr />
+          <p class="flex justify-between px-5 py-3 text-3xl">
+            Order Total : <b> 600AED</b>
+          </p>
+        </div>
+        <!--  Right side Of main -->
+      </section>
+
+      <!-- Similar project  -->
+      <section class="my-20">
+        <h3 class="mb-10 text-center text-5xl font-semibold">
+          Similar Project
+        </h3>
+        <!--  All Events Section -->
+        <div
+          class="grid-col-1 grid items-stretch justify-center gap-7 px-5 sm:grid-cols-2 lg:grid-cols-3 lg:px-3 xl:grid-cols-3"
+        >
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+          <!-- Cards Section  -->
+          <div class="event-card group">
+            <a href="./eventDetails.html" class="card-achor">
+              <img
+                class="card-img group-[&:hover]:scale-110 group-[&:hover]:duration-[3s] group-[&:hover]:ease-in-out"
+                src="./Assets/Image/card-img.png"
+                alt=""
+              />
+              <span class="sr-only"> Image This Card </span>
+            </a>
+            <!-- overlay -->
+            <div class="event-card-overlay">
+              <span class="overlay-card-left">
+                March <br />
+                01</span
+              >
+              <span class="overlay-card-right">aed 0 - 60</span>
+            </div>
+            <!-- overlay -->
+            <div class="px-5 py-2">
+              <h3 class="mb-2 text-xl font-bold">
+                The Body Museum-Collaboration
+              </h3>
+              <p class="text-sm font-thin">
+                Date and Time Fri, September 2022 -- 50 شارع طَوِي مُوَيلِح
+                القاهرة
+                <br />
+                <span class="font-medium">
+                  Abu Dhabi - United Arab Emirates</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Cards Section  -->
+        </div>
+        <!-- ALL Cards END here  -->
+      </section>
+      <!-- Similar project  -->
+    </main>
+
+    <!-- Footer Section  -->
+
+    <footer class="mt-40 bg-[#14213D] shadow dark:bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="https://www.royex.ae/"
+            class="mb-4 flex items-center space-x-3 sm:mb-0 rtl:space-x-reverse"
+          >
+            <img src="./Assets/Image/logo/logo.svg" class="" alt="evenspro" />
+          </a>
+          <ul
+            class="mb-6 flex flex-wrap items-center text-sm font-medium text-white dark:text-gray-400 sm:mb-0"
+          >
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8"
+        />
+        <span class="block text-sm text-white sm:text-center"
+          >© 2023
+          <a href="https://www.royex.ae/" class="hover:underline"
+            >Design and developed by Royex Technologies™</a
+          >.And Royex All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!-- Footer Section  -->
+    <!-- Footer Section  -->
+    <!-- Script js And Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/flowbite.js"></script>
+    <script src="./js/tw-elements.umd.min.js"></script>
+    <script src="./js/plugins/autoType.js"></script>
+    <script src="./js/custom.js" type="module"></script>
+  </body>
+</html>

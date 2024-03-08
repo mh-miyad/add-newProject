@@ -22,6 +22,15 @@
   position: relative;
   overflow-x: hidden;
 }
+.products-details-header-part {
+  width: 100%;
+  background-image: url("../Assets/products.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
 
 .details-header-content {
   position: absolute;
@@ -36,5 +45,67 @@
 }
 
 /*! ====================================== */
+.checkout-form {
+  width: 100%;
+}
+
+.checkout-form form h6 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.checkout-form form .form-control {
+  margin: 10px 0px;
+  position: relative;
+}
+
+.checkout-form form .form-control label:not([for="checkout-checkbox"]) {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.checkout-form form .form-control input:not([type="checkbox"]) {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  outline: none;
+  border: 0.2px solid #4e515085;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.checkout-form form .form-control input:not([type="checkbox"])::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.checkout-form form .form-control label[for="checkout-checkbox"] {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 10px;
+}
+
+.checkout-form form .form-control > div {
+  position: relative;
+}
+
+.checkout-form form .form-control > div span.fa {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(15px, -50%);
+}
+
+.checkout-form form .form-group {
+  display: flex;
+  column-gap: 25px;
+}
+
+.checkout-form form .checkbox-control {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
 
 /* !====================================== */
