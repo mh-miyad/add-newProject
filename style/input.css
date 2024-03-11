@@ -26,6 +26,9 @@
   .btn-primary {
     @apply bg-[#FCA311] font-semibold capitalize text-white hover:bg-[#14213D];
   }
+  .btn-download {
+    @apply bg-[#FCA311] px-10 py-3 font-semibold capitalize text-white hover:bg-[#14213D];
+  }
   .btn-profile {
     @apply bg-[#14213D] font-semibold capitalize text-white hover:bg-[#FCA311];
   }
@@ -93,6 +96,10 @@
   .navbar-responsive {
     @apply invisible fixed bottom-0 right-0 top-0 z-[1045] flex w-96 max-w-full translate-x-full flex-col border-none bg-white bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none;
   }
+
+  .drawer-toggle {
+    @apply fixed right-0 top-0 z-[99999] h-screen w-full max-w-lg  overflow-y-auto bg-white p-4 transition-transform delay-150 duration-300 ease-linear dark:bg-gray-800;
+  }
   /* Navbar Part  */
 
   /* input section */
@@ -108,8 +115,8 @@
   .event-card {
     @apply relative max-w-md overflow-hidden rounded-lg border border-gray-200 shadow-md;
   }
-  .card-achor {
-    @apply block h-full max-h-[208px] overflow-hidden;
+  .card-anchor {
+    @apply block h-full max-h-[130px] overflow-hidden md:max-h-[200px];
   }
   .card-img {
     @apply max-h-52 w-full overflow-hidden rounded-t-lg object-cover ease-linear;
