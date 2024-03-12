@@ -70,9 +70,27 @@
   width: 100%;
   padding: 10px 10px 10px 40px;
   outline: none;
+  border-radius: 6px;
   border: 0.2px solid #4e515085;
   font-size: 12px;
   font-weight: 700;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.checkout-form form .form-control select {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  outline: none;
+  border-radius: 6px;
+  border: 0.2px solid #4e515085;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 .checkout-form form .form-control input:not([type="checkbox"])::placeholder {

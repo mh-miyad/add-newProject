@@ -80,3 +80,20 @@ addToCalendarButton.addEventListener("click", () => {
   window.open(calendarLink, "_blank"); // Open calendar link in new tab
   console.log(eventDetails); // Or use clipboard API to copy to clipboard
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".checkout-form form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    const formData = new FormData(form);
+    const formValues = {};
+
+    for (const [key, value] of formData.entries()) {
+      formValues[key] = value;
+    }
+
+    console.log(formValues);
+  });
+});
