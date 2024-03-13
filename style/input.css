@@ -98,7 +98,13 @@
   }
 
   .drawer-toggle {
-    @apply fixed right-0 top-0 z-[99999] h-screen w-full max-w-lg  overflow-y-auto bg-white p-4 transition-transform delay-150 duration-300 ease-linear dark:bg-gray-800;
+    @apply fixed right-0 top-0 z-[99990] h-screen w-full max-w-lg  overflow-y-auto bg-white p-4 transition-transform delay-150 duration-300 ease-linear dark:bg-gray-800;
+  }
+  .checkOutLabel {
+    @apply flex cursor-pointer select-none rounded-lg border border-gray-300 p-4 peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50;
+  }
+  .checkOutSpan {
+    @apply absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white peer-checked:border-gray-700;
   }
   /* Navbar Part  */
 

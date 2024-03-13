@@ -241,6 +241,81 @@
       <!-- Event Details -->
     </main>
 
+       
+    <!-- drawer component -->
+  <div
+      id="drawer-right-example"
+      class="drawer-toggle translate-x-full"
+      tabindex="-1"
+      aria-labelledby="drawer-right-label"
+    >
+      <h5
+        id="drawer-right-label"
+        class="mb-4 inline-flex items-center text-base font-semibold text-gray-500 dark:text-gray-400"
+      >
+        Your Cart Item
+      </h5>
+      <button
+        type="button"
+        data-drawer-hide="drawer-right-example"
+        aria-controls="drawer-right-example"
+        class="btn btn-xs absolute end-6 top-2.5 mr-9 inline-flex size-8 items-center"
+      >
+        <i class="bi bi-x-lg border text-2xl text-red-600"></i>
+        <span class="sr-only">Close menu</span>
+      </button>
+      <!--  Body Of drawer -->
+      <div>
+        <div class="w-full bg-white py-3">
+          <div class="flex justify-between border-b pb-3">
+            <h1 class="text-2xl font-semibold">Shopping Cart</h1>
+            <h2 class="text-2xl font-semibold">3 Items</h2>
+          </div>
+          <!-- item one  -->
+          <div class="flex items-center justify-between border-b">
+            <div class="flex items-center gap-4">
+              <img
+                class="h-24 w-24 object-cover object-center"
+                src="https://chaldn.com/_mpimage/cadbury-dairy-milk-silk-roast-almond-chocolate-bar-143-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D128513&q=best&v=1&m=400&webp=1"
+                alt=""
+              />
+              <h2 class="text-lg font-semibold">Alooz Chips</h2>
+            </div>
+            <div class="flex items-center gap-2">
+              <label for="cart-shopping" class="sr-only">Quantity</label>
+              <button
+                class="border border-black/50 px-2 py-1 text-lg font-bold"
+              >
+                <i class="bi bi-dash"></i>
+              </button>
+              <input
+                type="text"
+                id="cart-shopping"
+                value="1"
+                class="form-input w-10 py-1.5 text-center"
+                name="cart-shopping"
+              />
+              <button
+                class="border border-black/50 px-2 py-1 text-lg font-bold"
+              >
+                <i class="bi bi-plus"></i>
+              </button>
+            </div>
+            <span id="price" class="mr-4 text-lg">$20</span>
+          </div>
+
+          <!-- item One End   -->
+        </div>
+        <div class="absolute bottom-10 w-10/12 right-10 ">
+          <a href="./productCheckOut.html" class="w-full block rounded-md  bg-[#14213D] text-white text-center px-8 py-3">
+          CheckOut 
+        </a>
+        </div>
+      </div>
+      <!--  Body Of drawer -->
+    </div>
+
+    <!-- Modal Section  -->
     <!-- Footer Section  -->
 
     <footer class="bg-[#14213D] shadow dark:bg-gray-900">
@@ -287,6 +362,7 @@
     <!-- Footer Section  -->
     <!-- Script js And Jquery  -->
     <script src="./js/tw-elements.umd.min.js"></script>
+    <script src="./js/flowbite.js"></script>
     <script src="./js/custom.js"></script>
   </body>
 </html>
