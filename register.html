@@ -13,6 +13,126 @@
     <title>EvensPRO || Register-Page</title>
   </head>
   <body>
+     <header class="header-part h-40 xl:h-72 2xl:h-52">
+     <!-- Navbar  -->
+      <nav class="navBar-fixed">
+        <div class="navBar mx-auto max-w-[1320px]">
+          <!-- Logo  -->
+          <a href="./home.html">
+            <img src="./Assets/logo-2.svg" alt="" />
+          </a>
+          <!-- Logo  -->
+          <!-- right side Of nav bar  -->
+          <div class="hidden lg:block">
+            <ul class="nav-links">
+              <li>
+                <a href="./home.html"> Brows Event </a>
+              </li>
+              <li>
+                <a href="./login.html"> Sign In </a>
+              </li>
+              <li>
+                <button class="btn btn-lg btn-primary">Buy Tickets</button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-drawer-target="drawer-right-example"
+                  data-drawer-show="drawer-right-example"
+                  data-drawer-placement="right"
+                  aria-controls="drawer-right-example"
+                  class="btn btn-profile cart-btn relative inline-flex items-center"
+                >
+                  <i class="bi bi-cart4"></i>
+                  <span class="sr-only">Add to Cart</span>
+                  <div class="badgeBox">0</div>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              data-drawer-target="drawer-right-example"
+              data-drawer-show="drawer-right-example"
+              data-drawer-placement="right"
+              aria-controls="drawer-right-example"
+              class="btn-profile cart-btn relative inline-flex items-center rounded px-3 py-1"
+            >
+              <i class="bi bi-cart4 text-xl"></i>
+              <span class="sr-only">Add Cart</span>
+              <div class="badgeBox">0</div>
+            </button>
+            <button
+              class="btn-primary mx-2 px-2 py-1"
+              type="button"
+              data-te-offcanvas-toggle
+              data-te-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <span class="sr-only"> Open menu </span>
+              <i class="bi bi-list text-xl"></i>
+            </button>
+          </div>
+          <!-- right side Of nav bar  -->
+        </div>
+      </nav>
+      <!-- Navbar  -->
+      <!-- Navbar For Mobile Version  -->
+      <!-- <button
+        class="btn btn-lg bg-pink-400"
+       
+      >
+        Toggle right offcanvas
+      </button> -->
+
+      <!-- Navbar For Mobile Version  -->
+      <div
+        class="navbar-responsive"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+        data-te-offcanvas-init
+      >
+        <!--  Header Part Of Responsive navbar  -->
+        <div class="flex items-center justify-between p-4">
+          <h5
+            class="mb-0 font-semibold leading-normal"
+            id="offcanvasRightLabel"
+          ></h5>
+          <button
+            type="button"
+            class="close-btn-navbar"
+            data-te-offcanvas-dismiss
+          >
+            <span class="sr-only">Close Button </span>
+            <i class="bi bi-x-lg text-danger-600"></i>
+          </button>
+        </div>
+        <!--  Header Part Of Responsive navbar  -->
+        <!-- ! Main navbar Of Responsive navbar -->
+        <div class="offcanvas-body flex-grow overflow-y-auto p-4">
+          <ul class="nav-links-responsive">
+            <li>
+              <a href="./home.html"> Brows Event </a>
+            </li>
+            <li>
+              <a href="./login.html"> Sign In </a>
+            </li>
+            <li>
+              <button class="btn btn-lg btn-primary">Buy Tickets</button>
+            </li>
+          </ul>
+        </div>
+        <!-- ! Main navbar Of Responsive navbar -->
+      </div>
+      <!-- Navbar For Mobile Version  -->
+      <!--  Header Content  -->
+     
+      <!--  Header Content  -->
+    </header>
     <main class="mx-auto mb-20">
       <section class="bg-gray-50 dark:bg-gray-900">
         <div
