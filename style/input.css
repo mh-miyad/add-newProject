@@ -156,4 +156,23 @@
     @apply border-b-[3.5px] border-b-[#FCA311];
   }
   /* details part */
+
+  .pdfViwer-modal {
+    @apply fixed left-0 top-0 z-[9999] flex h-[90%] w-full items-center justify-center bg-[rgba(0,0,0,0.8)] transition-all duration-200 ease-linear;
+  }
+  .showPdf {
+    @apply hidden;
+  }
+  .blog-page {
+    @apply container mx-auto mb-24  w-full max-w-[1320px]  px-5  sm:px-10;
+  }
+  .footer-mob {
+    @apply mb-7 grid grid-cols-1 justify-between gap-14 md:grid-cols-2;
+  }
+  .footer-desk {
+    @apply flex items-start justify-between pb-20;
+  }
+  .footer-bottom {
+    @apply mx-auto flex max-w-[1320px] flex-col items-center gap-5 px-5 py-10 text-center text-base  md:flex-row  md:justify-between;
+  }
 }

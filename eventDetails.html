@@ -318,51 +318,102 @@
     <!-- Modal Section  -->
     <!-- Footer Section  -->
 
-    <footer class="bg-[#14213D] shadow dark:bg-gray-900">
-      <div class="mx-auto w-full max-w-screen-xl p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://www.royex.ae/"
-            class="mb-4 flex items-center space-x-3 sm:mb-0 rtl:space-x-reverse"
-          >
-            <img src="./Assets/Image/logo/logo.svg" class="" alt="evenspro" />
-          </a>
-          <ul
-            class="mb-6 flex flex-wrap items-center text-sm font-medium text-white dark:text-gray-400 sm:mb-0"
-          >
-            <li>
-              <a href="#" class="me-4 hover:underline md:me-6">About</a>
-            </li>
-            <li>
-              <a href="#" class="me-4 hover:underline md:me-6"
-                >Privacy Policy</a
-              >
-            </li>
-            <li>
-              <a href="#" class="me-4 hover:underline md:me-6">Licensing</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <hr
-          class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8"
-        />
-        <span class="block text-sm text-white sm:text-center"
-          >© 2023
-          <a href="https://www.royex.ae/" class="hover:underline"
-            >Design and developed by Royex Technologies™</a
-          >.And Royex All Rights Reserved.</span
-        >
+    <footer class="bg-[#14213D] text-white pt-14  ">
+    <div class=" ">
+      <div class="mx-auto max-w-[1320px] footer-mob  xl:footer-desk px-5">
+          <!-- logo and about topic section   -->
+      <div class="max-w-md">
+       <a href="./home.html">
+         <img src="./Assets/Image/logo/logo.svg" alt="company log " class="mb-4">
+       </a>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magni? Voluptate, ipsum.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+        <p class="text-white mt-7">Eos, magni? Voluptate, ipsum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magni? Voluptate, ipsum. </p> 
       </div>
+      <!-- logo and about topic section   -->
+     
+             <!-- Quick Link  -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Quick Link</h2>
+        <ul class="space-y-5 text-base mx-2">
+        <li>Browse Events</li>
+        <li>Help </li>
+        <li>Sign In</li>
+      </ul>
+      </div>
+      <!-- company  info -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Company Info </h2>
+        <ul class="space-y-5 text-base mx-2">
+        <li>Privacy Policy </li>
+        <li>Terms & Conditions</li>
+      </ul>
+      </div>
+      <!-- company  info -->
+     <!-- Contact  US -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Contact US </h2>
+       <ul class="space-y-5 text-base mx-2">
+        <li>
+        <i class="bi bi-geo-alt"></i>
+        <span>3674 Loreal Street , Dipiscingco , <br>
+        Dubai , UAE
+        </span>  
+        </li>
+        <li>
+          <i class="bi bi-telephone"></i>
+          <span> +01 234 567 890</span>
+        </li>
+        <li>
+        <i class="bi bi-envelope"></i>
+          <span> 0NqgH@example.com</span>
+        </li>
+      </ul>
+      <div class="flex space-x-5 text-3xl  mt-4  mx-3">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+      </div>
+      </div>
+      <!-- Contact  US -->
+        </div>
+     
+      <hr class="opacity-30">
+      <div class="footer-bottom">
+       <span>@2024 EvensPRO.All Rights Reserved.</span>
+       <span>Design and Developed by  <a href="https://www.royex.ae/" target="_blank" rel="noopener" class="text-red-500 hover:underline underline-offset-4">
+        Royex Technologies
+       </a></span>
+      </div>
+    </div>
+     
     </footer>
 
     <!-- Footer Section  -->
+      <button id="scroll-btn">
+      <span class="sr-only">Scroll to Top </span>
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
     <!-- Footer Section  -->
     <!-- Script js And Jquery  -->
     <script src="./js/tw-elements.umd.min.js"></script>
     <script src="./js/flowbite.js"></script>
-    <script src="./js/custom.js"></script>
+    <!-- <script src="./js/custom.js"></script> -->
+     <script>
+   const scrollBtn = document.getElementById("scroll-btn");
+
+window.addEventListener("scroll", function() {
+  console.log(window.scrollY);
+  if (window.scrollY > 100) {
+    scrollBtn.classList.add("show"); /* Add 'show' class for animation */
+  } else {
+    scrollBtn.classList.remove("show"); /* Remove 'show' class to hide */
+  }
+});
+
+scrollBtn.addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+    </script>
   </body>
 </html>
