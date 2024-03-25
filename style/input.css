@@ -54,14 +54,14 @@
   .header-image {
     @apply mx-auto my-2 flex w-full max-w-sm justify-center  gap-3 md:my-5 md:scale-[1.4]  xl:my-7 xl:scale-150;
   }
-  .details-header-part {
-    @apply h-28 md:h-56 lg:h-72 xl:h-96;
+  .header-part {
+    @apply h-28 md:h-56 lg:h-72 xl:h-96 2xl:h-[500px] 2xl:pb-10;
   }
   .products-details-header-part {
     @apply h-28 md:h-56 lg:h-72 xl:h-96;
   }
   .details-header-content {
-    @apply top-20 mx-auto max-h-[400px] w-full max-w-5xl sm:top-32 xl:max-w-7xl;
+    @apply top-20 mx-auto max-h-[400px] w-full max-w-5xl sm:top-32  min-[920px]:top-24 lg:top-28 xl:max-w-7xl 2xl:top-52;
   }
   .details-header-content-img {
     @apply mx-auto  h-full w-10/12 rounded-sm object-cover shadow-lg;
