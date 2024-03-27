@@ -132,145 +132,241 @@
       <!--  Header Content  -->
     </header>
     <div class="h-auto bg-[#14213D] pb-40">
+
     </div>
     <!-- Header Section  -->
     <main class="mx-auto my-5 max-w-[1320px] px-4 text-center">
-     
-<div id="tab-1">
+      <section
+        class="flex flex-col items-start justify-center gap-3 lg:flex-row lg:justify-start"
+      >
+        <div
+          class="mx-auto h-96 w-80 border bg-gray-50 p-3 shadow-2 lg:w-96 lg:min-w-[300px]"
+        >
+          <div class="">
+            <img
+              class="mx-auto my-3 size-40 rounded-full object-cover ring-2 ring-[#FCA311] ring-offset-2"
+              src="./Assets/avatar.jpg"
+              alt="Default avatar"
+            />
+            <p class="text-2xl font-semibold uppercase text-slate-700">
+              John Doe
+            </p>
+            <p class="text-md mb-5 font-semibold text-slate-700">Student</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <button class="btn btn-profile active" id="profileBtn">
+              My Profile
+            </button>
+            <button class="btn btn-profile" id="ticketBtn">My Tickets</button>
+          </div>
+        </div>
+        <!-- My profile Part  -->
+        <div class="mb-20 h-auto w-full border py-6" id="my-profile">
+          <div
+            class="mx-auto flex flex-col overflow-hidden rounded-lg bg-white px-8 py-6 shadow-md"
+          >
+            <div class="mb-8 flex items-center">
+              <img
+                class="mr-4 h-20 w-20 rounded-full"
+                src="./Assets/avatar.jpg"
+                alt="Profile Picture"
+              />
+              <div class="flex flex-col">
+                <h2 class="text-2xl font-bold text-gray-800">John Doe</h2>
+                <p class="text-sm text-gray-600">
+                  Student | Traveler | Music Lover
+                </p>
+              </div>
+            </div>
 
+            <div class="mb-2 flex items-center">
+              <p class="mr-4 text-lg font-semibold text-gray-800">Location:</p>
+              <p class="text-sm text-gray-600">New York City</p>
+            </div>
 
-<div class="relative overflow-x-auto">
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Product name
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Color
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Category
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Price
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple MacBook Pro 17"
-                </th>
-                <td class="px-6 py-4">
-                    Silver
-                </td>
-                <td class="px-6 py-4">
-                    Laptop
-                </td>
-                <td class="px-6 py-4">
-                    $2999
-                </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Microsoft Surface Pro
-                </th>
-                <td class="px-6 py-4">
-                    White
-                </td>
-                <td class="px-6 py-4">
-                    Laptop PC
-                </td>
-                <td class="px-6 py-4">
-                    $1999
-                </td>
-            </tr>
-            <tr class="bg-white dark:bg-gray-800">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Magic Mouse 2
-                </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
-                <td class="px-6 py-4">
-                    Accessories
-                </td>
-                <td class="px-6 py-4">
-                    $99
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-</div>
-<div id="tab-2">
+            <div class="mb-2 flex items-center gap-5">
+              <p class="py-1 text-start text-lg font-semibold text-gray-800">
+                Interests:
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-blue-500 px-3 py-1 text-sm text-white"
+                  >Concerts</span
+                >
+                <span
+                  class="rounded-full bg-green-500 px-3 py-1 text-sm text-white"
+                  >Tech Workshops</span
+                >
+                <span
+                  class="rounded-full bg-purple-500 px-3 py-1 text-sm text-white"
+                  >AI Seminars</span
+                >
+              </div>
+            </div>
+            <div class="mt-6 border-t border-gray-200 pt-6 text-start">
+              <h3 class="mb-4 text-lg font-semibold text-gray-800">Settings</h3>
 
-<div class="relative overflow-x-auto">
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Product name
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Color
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Category
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Price
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple MacBook Pro 17"
-                </th>
-                <td class="px-6 py-4">
-                    Silver
-                </td>
-                <td class="px-6 py-4">
-                    Laptop
-                </td>
-                <td class="px-6 py-4">
-                    $2999
-                </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Microsoft Surface Pro
-                </th>
-                <td class="px-6 py-4">
-                    White
-                </td>
-                <td class="px-6 py-4">
-                    Laptop PC
-                </td>
-                <td class="px-6 py-4">
-                    $1999
-                </td>
-            </tr>
-            <tr class="bg-white dark:bg-gray-800">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Magic Mouse 2
-                </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
-                <td class="px-6 py-4">
-                    Accessories
-                </td>
-                <td class="px-6 py-4">
-                    $99
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-</div>
+              <div class="mb-6">
+                <p class="mb-2 text-lg font-semibold text-gray-800">
+                  Ticketing Preferences:
+                </p>
+                <div class="grid grid-cols-1 gap-4">
+                  <div
+                    class="mb-2 flex flex-wrap items-center gap-2 md:flex-nowrap"
+                  >
+                    <p class="mb-2 text-xl font-semibold text-gray-600">
+                      Notifications:
+                    </p>
+                    <select class="form-select rounded-md border px-3 py-1">
+                      <option>Email</option>
+                      <option>Push Notification</option>
+                      <option selected>Both</option>
+                      <option>None</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex space-x-7 text-gray-600">
+                <p class="mb-2 text-xl">Ticket History:</p>
+                <p class="text-xl">Tickets - <b>5</b></p>
+              </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-end">
+              <a href="#" class="text-sm text-blue-500 hover:underline"
+                ><img src="./Assets/logo-2.svg" class="h-5" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mb-20 hidden h-auto w-full border px-5 py-6"
+          id="my-tickets"
+        >
+          <!-- Card -1 -->
+
+          <div class="relative overflow-x-auto sm:rounded-lg">
+            <h3
+              class="mb-4 border-2 px-5 py-4 text-3xl font-bold uppercase text-[#14213D]"
+            >
+              List of Tickets
+            </h3>
+            <table
+              class="w-full text-left text-sm text-gray-500 dark:text-gray-400 rtl:text-right"
+            >
+              <thead
+                class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400"
+              >
+                <tr>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">No</th>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">
+                    Event Name
+                  </th>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">Topic</th>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">
+                    Quantity
+                  </th>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">Price</th>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800"
+                >
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                  >
+                    Apple MacBook Pro 17 launching
+                  </td>
+                  <td class="px-6 py-4">Apple Device</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Card -1 -->
+        </div>
+        <!-- My profile Part  -->
+      </section>
+      <!-- Profile Section -->
+
+      <!-- Profile Section -->
     </main>
 
 
