@@ -168,3 +168,16 @@
   /* Add a new class for animation */
   opacity: 1;
 }
+
+/* Last Added  */
+.btn-delete {
+  background-color: rgb(255, 81, 81);
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}

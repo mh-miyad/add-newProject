@@ -272,7 +272,7 @@
             </div>
 
             <section class="checkout-form px-5 pb-10 pt-3">
-              <form action="#!" method="get">
+              <form action="#" method="get" onsubmit="return false">
                 <div>
                   <h2 class="text-xl my-2 font-medium">Ticket Buyer</>
                   <div class="flex items-center justify-center lg:justify-between gap-5 flex-wrap lg:flex-nowrap">
@@ -323,9 +323,37 @@
                       />
                     </div>
                   </div>
+                  <div class="flex items-center justify-center lg:justify-between gap-5 flex-wrap lg:flex-nowrap">
+                    <div class="form-control flex-grow">
+                      <label for="ticket-Buyer-company-name" class="sr-only"
+                        >Company Name 
+                      </label>
+                      <input
+                        type="text"
+                        id="ticket-Buyer-company-name"
+                        name="ticket-Buyer-company-name"
+                        placeholder="Company Name "
+                      />
+                    </div>
+                    <div class="form-control flex-grow">
+                      <label for="ticket-Buyer-designation" class="sr-only"
+                        >Designation 
+                      </label>
+                      <input
+                        type="text"
+                        id="ticket-Buyer-designation"
+                        name="ticket-Buyer-designation"
+                        placeholder="Designation"
+                      />
+                    </div>
+                  </div>
+                  <div id="anotherForm">
+                  
+                  </div>
+                  <button class="btn btn-primary my-2" type="button" onclick="addForm(`anotherForm`)">Add </button>
                 </div>
                 
-                <div>
+                <!-- <div>
                   <h2 class="text-2xl my-2 font-bold">Payment<span class="text-xs mx-2"> ( Your Card Info is not stored in EvensPro Website )</span> </h2>
                   <div class="flex items-center justify-center lg:justify-between gap-5 flex-wrap lg:flex-nowrap">
                     <div class="form-control flex-grow">
@@ -462,7 +490,7 @@
                   </div>
                   
                   
-                </div>
+                </div> -->
                 
                 <div class="form-control-btn gap-2  flex flex-col md:flex-row justify-between items-center">
                   <button type="submit" class="btn btn-profile  mt-4 capitalize">
@@ -803,6 +831,7 @@
     <script src="./js/tw-elements.umd.min.js"></script>
     <script src="./js/flowbite.js"></script>
     <script src="./js/custom.js"></script>
+    <script src="./js/formCreate.js"></script>
     <script>
       function startCountdown() {
         let timeLeft = 8 * 60; // 8 minutes converted to seconds
