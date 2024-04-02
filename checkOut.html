@@ -272,7 +272,7 @@
             </div>
 
             <section class="checkout-form px-5 pb-10 pt-3">
-              <form action="#" method="get" onsubmit="return false">
+              <form action="#">
                 <div>
                   <h2 class="text-xl my-2 font-medium">Ticket Buyer</>
                   <div class="flex items-center justify-center lg:justify-between gap-5 flex-wrap lg:flex-nowrap">
@@ -350,7 +350,7 @@
                   <div id="anotherForm">
                   
                   </div>
-                  <button class="btn btn-primary my-2" type="button" onclick="addForm(`anotherForm`)">Add </button>
+                  <button class="btn btn-primary my-2" type="button" id="addForm">Add </button>
                 </div>
                 
                 <!-- <div>
@@ -830,8 +830,8 @@
     <!-- Script js And Jquery  -->
     <script src="./js/tw-elements.umd.min.js"></script>
     <script src="./js/flowbite.js"></script>
-    <script src="./js/custom.js"></script>
-    <script src="./js/formCreate.js"></script>
+    <!-- <script src="./js/custom.js"></script> -->
+ 
     <script>
       function startCountdown() {
         let timeLeft = 8 * 60; // 8 minutes converted to seconds
@@ -862,7 +862,7 @@
    const scrollBtn = document.getElementById("scroll-btn");
 
 window.addEventListener("scroll", function() {
-  console.log(window.scrollY);
+  
   if (window.scrollY > 100) {
     scrollBtn.classList.add("show"); /* Add 'show' class for animation */
   } else {
@@ -875,5 +875,154 @@ scrollBtn.addEventListener("click", function() {
 });
 
     </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const allDomNodes = []
+
+      const addFormBtn = document.getElementById("addForm");
+let counter = 1;
+addFormBtn.addEventListener("click", function () {
+  counter++;
+  var form = document.getElementById("anotherForm");
+  var newForm = document.createElement("form");
+  newForm.classList.add("created-form");
+  newForm.setAttribute("id", `form${counter}`);
+  newForm.innerHTML = `
+
+                       <div class="flex justify-between">
+                        <h2 class="text-xl my-2 font-medium">Ticket Buyer</h2>
+                        <button type="button"  class="btn btn-delete" onclick="removeForm(this)" >Remove</button>
+                       </div>
+                    <div class="flex items-center justify-center lg:justify-between gap-5 flex-wrap lg:flex-nowrap">
+                      <div class="form-control flex-grow">
+                        <label for="ticket-Buyer-first-name${counter}" class="sr-only"
+                          >First Name
+                        </label>
+                        <input
+                          type="text"
+                          id="ticket-Buyer-first-name${counter}"
+                          name="ticket-Buyer-first-name${counter}"
+                          placeholder="First Name "
+                        />
+                      </div>
+                      <div class="form-control flex-grow">
+                        <label for="ticket-Buyer-last-name${counter}" class="sr-only"
+                          >Last Name
+                        </label>
+                        <input
+                          type="text"
+                          id="ticket-Buyer-last-name${counter}"
+                          name="ticket-Buyer-last-name${counter}"
+                          placeholder="Last Name "
+                        />
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-center lg:justify-between gap-5 flex-wrap lg:flex-nowrap">
+                      <div class="form-control flex-grow">
+                        <label for="ticket-Buyer-email${counter}" class="sr-only"
+                          >email
+                        </label>
+                        <input
+                          type="email"
+                          id="ticket-Buyer-email${counter}"
+                          name="ticket-Buyer-email${counter}"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="form-control flex-grow">
+                        <label for="ticket-Buyer-confirm-email${counter}" class="sr-only"
+                          >Confirm Email
+                        </label>
+                        <input
+                          type="text"
+                          id="ticket-Buyer-confirm-email${counter}"
+                          name="ticket-Buyer-confirm-email${counter}"
+                          placeholder="Confirm Email"
+                        />
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-center lg:justify-between gap-5 flex-wrap lg:flex-nowrap">
+                      <div class="form-control flex-grow">
+                        <label for="ticket-Buyer-company-name${counter}" class="sr-only"
+                          >Company Name
+                        </label>
+                        <input
+                          type="text"
+                          id="ticket-Buyer-company-name${counter}"
+                          name="ticket-Buyer-company-name${counter}"
+                          placeholder="Company Name "
+                        />
+                      </div>
+                      <div class="form-control flex-grow">
+                        <label for="ticket-Buyer-designation${counter}" class="sr-only"
+                          >Designation
+                        </label>
+                        <input
+                          type="text"
+                          id="ticket-Buyer-designation${counter}"
+                          name="ticket-Buyer-designation${counter}"
+                          placeholder="Designation"
+                        />
+                      </div>
+                    </div>
+
+      `;
+
+  form.appendChild(newForm);
+  formIsAdded(newForm.id);
+
+});
+
+
+function removeForm(param) {
+  const mainDiv = param.closest(".created-form");
+  mainDiv.remove();
+  counter--;
+  console.log(counter);
+}
+
+function formIsAdded(id){
+  const form  = document.querySelector(`#${id}`);
+  const inputs = form.querySelectorAll("input");
+  allDomNodes.push(inputs);
+}
+
+  const form = document.querySelector(".checkout-form form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting
+    
+    const formData = new FormData(form);
+    const formValues1 = {};
+    const formValues2 = {};
+    const formArray = [];
+    for (const [key, value] of formData.entries()) {
+      formValues1[key] = value;
+    }
+    formArray.push(formValues1);
+    allDomNodes.forEach((input) => {
+      input.forEach((input) => {
+        const { name, value } = input;
+        formValues2[name] = value;
+      })
+      formArray.push(formValues2);
+    })
+  
+    
+    // console.log(formValues);
+    console.log(formArray);
+    // console.log(form2);
+  
+
+
+
+  });
+
+
+
+
+});
+    </script>
+    
   </body>
 </html>

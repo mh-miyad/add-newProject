@@ -67,7 +67,13 @@ addToCalendarButton.addEventListener("click", () => {
   const description = "Optional event description"; // Optional
 
   // 2. Calendar Invite Link
-  const calendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startDate.toISOString().slice(0, 10)}T${startDate.toTimeString().slice(0, 8)}%2F${endDate.toISOString().slice(0, 10)}T${endDate.toTimeString().slice(0, 8)}&details=${description}&location=${location}`;
+  const calendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startDate
+    .toISOString()
+    .slice(0, 10)}T${startDate.toTimeString().slice(0, 8)}%2F${endDate
+    .toISOString()
+    .slice(0, 10)}T${endDate
+    .toTimeString()
+    .slice(0, 8)}&details=${description}&location=${location}`;
 
   // 3. Event Details for Manual Addition
   const eventDetails = `
@@ -81,21 +87,4 @@ addToCalendarButton.addEventListener("click", () => {
   console.log(eventDetails); // Or use clipboard API to copy to clipboard
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector(".checkout-form form");
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the form from submitting
-
-    const formData = new FormData(form);
-    const formValues = {};
-
-    for (const [key, value] of formData.entries()) {
-      formValues[key] = value;
-    }
-
-    console.log(formValues);
-  });
-});
-
-//
