@@ -181,3 +181,10 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
+/* Added css  */
+#cart-shopping {
+  width: 30px;
+  height: 30px;
+  padding: 5px 10px;
+}
