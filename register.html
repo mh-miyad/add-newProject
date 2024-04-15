@@ -248,14 +248,20 @@
             <h1 class="text-xl font-semibold">Shopping Cart</h1>
             <h2 class="text-xl font-semibold">3 Items</h2>
           </div>
+
           <!-- item one  -->
-          <div class="flex items-center justify-between border-b">
-            <div class="flex items-center gap-4">
+          <div
+            class="grid items-center gap-2"
+            style="
+              grid-template-columns: repeat(3, minmax(0, 1fr));
+              place-content: center;
+            ">
+            <div class="flex items-center gap-2">
               <img
                 class="h-14 w-14 object-cover object-center"
                 src="https://chaldn.com/_mpimage/cadbury-dairy-milk-silk-roast-almond-chocolate-bar-143-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D128513&q=best&v=1&m=400&webp=1"
                 alt="" />
-              <h2 class="text-sm font-semibold">Alooz Chips</h2>
+              <h2 class="text-sm font-semibold w-28">Alooz Chips Alooz</h2>
             </div>
             <div class="flex items-center gap-2">
               <label for="cart-shopping" class="sr-only">Quantity</label>
@@ -265,20 +271,21 @@
               </button>
               <input
                 type="text"
-                id="cart-shopping"
                 value="1"
-                class="form-input"
-                name="cart-shopping" />
+                class="cart-shopping form-input"
+                name="cart-shopping " />
               <button
                 class="border border-black/50 px-2 py-1 text-sm font-bold">
                 <i class="bi bi-plus"></i>
               </button>
             </div>
-            <span id="price" class="mr-4 text-xl font-semibold">$20</span>
-            <button id="price" class="mr-4 text-lg">
-              <span class="sr-only">remove item </span>
-              <i class="bi bi-trash text-danger"></i>
-            </button>
+            <div>
+              <span id="price" class="mr-4 text-lg font-semibold">AED 20</span>
+              <button id="price" class="mr-4 text-lg">
+                <span class="sr-only">remove item </span>
+                <i class="bi bi-trash text-danger"></i>
+              </button>
+            </div>
           </div>
 
           <!-- item One End   -->

@@ -9,7 +9,7 @@
       type="image/x-icon" />
     <link rel="stylesheet" href="./style/output.css" />
     <link rel="stylesheet" href="./style/Custom.css" />
-    <link rel="stylesheet" href="./style/ticketsDetails.css">
+    <link rel="stylesheet" href="./style/ticketsDetails.css" />
     <title>EvensPRO - Home</title>
   </head>
   <body>
@@ -128,22 +128,20 @@
     <div class="h-auto bg-[#14213D] pb-40"></div>
     <!-- Header Section  -->
     <main class="mx-auto my-5 max-w-[1320px] px-4 text-center">
-      
-        <div class="booking-content-box">
-          <div class="activities-title">
-            <h4>Ticket information</h4>
-            <div class="booking-id">
-              <h5><span>Transaction Id:</span> #93350 5666 94</h5>
-            </div>
+      <div class="booking-content-box">
+        <div class="activities-title">
+          <h4>Ticket information</h4>
+          <div class="booking-id">
+            <h5><span>Transaction Id:</span> #93350 5666 94</h5>
           </div>
-        
         </div>
-        <!--  Add here  Tab Button -->
-        <div class="flex justify-center items-center border lg:w-1/2 mx-auto mt-4 mb-10">
-          <button class="tab-btn active" id="tab-1-btn">Tickets</button>
-          <button class="tab-btn" id="tab-2-btn">Merchandise</button>
-        </div>
-      
+      </div>
+      <!--  Add here  Tab Button -->
+      <div
+        class="flex justify-center items-center border lg:w-1/2 mx-auto mt-4 mb-10">
+        <button class="tab-btn active" id="tab-1-btn">Tickets</button>
+        <button class="tab-btn" id="tab-2-btn">Merchandise</button>
+      </div>
 
       <div id="tab-1" class="">
         <div class="relative overflow-x-auto">
@@ -173,8 +171,11 @@
                 <td class="px-6 py-4">2</td>
                 <td class="px-6 py-4">$2999</td>
                 <td class="px-6 py-4">xHJwIUWn</td>
-                <td class="btn-download-2">
-                  <a href="./Assets/ticket.pdf" filetype="pdf">
+                <td class="px-6 py-4">
+                  <a
+                    href="./Assets/ticket.pdf"
+                    class="btn-download-2 mx-10"
+                    filetype="pdf">
                     <i class="bi bi-download"></i>
                   </a>
                 </td>
@@ -273,61 +274,39 @@
             </thead>
             <tbody>
               <tr
-                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th class="table-image-size">
-                  <img src="./Assets/products.jpg" class="" alt="" />
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-left">
+                <th class="">
+                  <img
+                    src="./Assets/products.jpg"
+                    class=""
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      margin: 0 0px;
+                      max-width: 70px;
+                      max-height: 150px;
+                      object-fit: cover;
+                    "
+                    alt="" />
                 </th>
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  class="px-8 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                   Apple MacBook Pro 17"
                 </th>
-                <td class="px-6 py-4">40</td>
-                <td class="px-6 py-4">$2999</td>
-                <td class="px-6 py-4">$2999</td>
-                <td class="px-6 py-4">$2999</td>
-              </tr>
-
-              <tr
-                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th class="table-image-size">
-                  <img src="./Assets/products.jpg" class="" alt="" />
-                </th>
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Apple MacBook Pro 17"
-                </th>
-                <td class="px-6 py-4">40</td>
-                <td class="px-6 py-4">$2999</td>
-                <td class="px-6 py-4">$2999</td>
-                <td class="px-6 py-4">$2999</td>
-              </tr>
-
-              <tr
-                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th class="table-image-size">
-                  <img src="./Assets/products.jpg" class="" alt="" />
-                </th>
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Apple MacBook Pro 17"
-                </th>
-                <td class="px-6 py-4">40</td>
-                <td class="px-6 py-4">$2999</td>
-                <td class="px-6 py-4">$2999</td>
-                <td class="px-6 py-4">$2999</td>
+                <td class="px-8">40</td>
+                <td class="px-8">$2999</td>
+                <td class="px-8">$2999</td>
+                <td class="px-8">$2999</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-
       <div class="my-10">
         <a href="./myProfile.html" class="btn btn-lg btn-primary">
-            Back to Profile
+          Back to Profile
         </a>
       </div>
     </main>
