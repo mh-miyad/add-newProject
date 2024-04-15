@@ -240,7 +240,7 @@
   padding: 20px 50px;
   height: 100vh;
 }
-.hidden {
+.hidden2 {
   display: none;
 }
 .modal-body {
@@ -251,7 +251,7 @@
   right: 0;
   padding: 30px;
   border-radius: 5px;
-  max-width: 1280px;
+  max-width: 768px;
   margin: 0 auto;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -306,5 +306,16 @@
 .btn-close:hover {
   background-color: red;
   color: white;
+}
+.img-profile {
+  max-width: 200px;
+  width: 200px;
+  max-height: 200px;
+  height: 200px;
+  border-radius: 9999;
+  -webkit-border-radius: 9999;
+  -moz-border-radius: 9999;
+  -ms-border-radius: 9999;
+  -o-border-radius: 9999;
 }
 /* modal */

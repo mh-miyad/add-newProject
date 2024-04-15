@@ -9,7 +9,6 @@
       type="image/x-icon" />
     <link rel="stylesheet" href="./style/output.css" />
     <link rel="stylesheet" href="./style/Custom.css" />
-
     <title>EvensPRO - Home</title>
   </head>
   <body>
@@ -132,17 +131,16 @@
         class="flex flex-col items-start justify-center gap-3 lg:flex-row lg:justify-start">
         <div
           class="mx-auto h-96 w-80 border bg-gray-50 p-3 shadow-2 lg:w-96 lg:min-w-[300px]">
-          <div class="">
-            <img
-              class="mx-auto my-3 size-40 rounded-full object-cover ring-2 ring-[#FCA311] ring-offset-2"
-              src="./Assets/avatar.jpg"
-              alt="Default avatar" />
-            <p class="text-2xl font-semibold uppercase text-slate-700 my-5">
-              John Doe
-            </p>
-            <!-- <p class="text-md mb-5 font-semibold text-slate-700"></p> -->
-          </div>
-          <div class="flex flex-col gap-4">
+          <img
+            class="mx-auto my-3 rounded-full image-profile object-cover ring-2 ring-[#FCA311] ring-offset-2"
+            src="./Assets/avatar.jpg"
+            alt="Default avatar" />
+          <p class="text-2xl font-semibold uppercase text-slate-700 my-5">
+            John Doe
+          </p>
+          <!-- <p class="text-md mb-5 font-semibold text-slate-700"></p> -->
+
+          <div class="flex flex-col gap-4 mt">
             <button class="btn btn-profile active" id="profileBtn">
               My Profile
             </button>
@@ -198,107 +196,106 @@
               </div>
             </div>
           </div>
-          <div
-            class="mb-20 hidden h-auto w-full border px-5 py-6"
-            id="my-tickets">
-            <!-- Card -1 -->
-
-            <div class="relative overflow-x-auto sm:rounded-lg">
-              <h3
-                class="mb-4 border-2 px-5 py-4 text-3xl font-bold uppercase text-[#14213D]">
-                List of Tickets
-              </h3>
-              <table
-                class="w-full text-left text-sm text-gray-500 dark:text-gray-400 rtl:text-right">
-                <thead
-                  class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
-                  <tr>
-                    <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">No</th>
-                    <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">
-                      Event Name
-                    </th>
-                    <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">Topic</th>
-                    <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">
-                      Quantity
-                    </th>
-                    <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">Price</th>
-                    <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">
-                      Action
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr
-                    class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
-                    <th scope="row" class="px-6 py-4 font-medium">1</th>
-                    <td
-                      class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
-                      Devin Ai Launch in Dubai
-                    </td>
-                    <td class="px-6 py-4">AI Seminar</td>
-                    <td class="px-6 py-4">2</td>
-                    <td class="px-6 py-4">$50AED</td>
-                    <td class="px-6 py-4">
-                      <a href="./ticketDetails.html" class="btn btn-primary"
-                        >View</a
-                      >
-                    </td>
-                  </tr>
-                  <tr
-                    class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
-                    <th scope="row" class="px-6 py-4 font-medium">1</th>
-                    <td
-                      class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
-                      Devin Ai Launch in Dubai
-                    </td>
-                    <td class="px-6 py-4">AI Seminar</td>
-                    <td class="px-6 py-4">2</td>
-                    <td class="px-6 py-4">$50AED</td>
-                    <td class="px-6 py-4">
-                      <a href="./ticketDetails.html" class="btn btn-primary"
-                        >View</a
-                      >
-                    </td>
-                  </tr>
-                  <tr
-                    class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
-                    <th scope="row" class="px-6 py-4 font-medium">1</th>
-                    <td
-                      class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
-                      Devin Ai Launch in Dubai
-                    </td>
-                    <td class="px-6 py-4">AI Seminar</td>
-                    <td class="px-6 py-4">2</td>
-                    <td class="px-6 py-4">$50AED</td>
-                    <td class="px-6 py-4">
-                      <a href="./ticketDetails.html" class="btn btn-primary"
-                        >View</a
-                      >
-                    </td>
-                  </tr>
-                  <tr
-                    class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
-                    <th scope="row" class="px-6 py-4 font-medium">1</th>
-                    <td
-                      class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
-                      Devin Ai Launch in Dubai
-                    </td>
-                    <td class="px-6 py-4">AI Seminar</td>
-                    <td class="px-6 py-4">2</td>
-                    <td class="px-6 py-4">$50AED</td>
-                    <td class="px-6 py-4">
-                      <a href="./ticketDetails.html" class="btn btn-primary"
-                        >View</a
-                      >
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!-- Card -1 -->
-          </div>
         </div>
+        <div
+          class="mb-20 hidden h-auto w-full border px-5 py-6"
+          id="my-tickets">
+          <!-- Card -1 -->
+
+          <div class="relative overflow-x-auto sm:rounded-lg">
+            <h3
+              class="mb-4 border-2 px-5 py-4 text-3xl font-bold uppercase text-[#14213D]">
+              List of Tickets
+            </h3>
+            <table
+              class="w-full text-left text-sm text-gray-500 dark:text-gray-400 rtl:text-right">
+              <thead
+                class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">No</th>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">
+                    Event Name
+                  </th>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">Topic</th>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">
+                    Quantity
+                  </th>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">Price</th>
+                  <th scope="col" class="px-3 py-3 sm:px-4 lg:px-6">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
+                    Devin Ai Launch in Dubai
+                  </td>
+                  <td class="px-6 py-4">AI Seminar</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="./ticketDetails.html" class="btn btn-primary"
+                      >View</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
+                    Devin Ai Launch in Dubai
+                  </td>
+                  <td class="px-6 py-4">AI Seminar</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="./ticketDetails.html" class="btn btn-primary"
+                      >View</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
+                    Devin Ai Launch in Dubai
+                  </td>
+                  <td class="px-6 py-4">AI Seminar</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="./ticketDetails.html" class="btn btn-primary"
+                      >View</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800">
+                  <th scope="row" class="px-6 py-4 font-medium">1</th>
+                  <td
+                    class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
+                    Devin Ai Launch in Dubai
+                  </td>
+                  <td class="px-6 py-4">AI Seminar</td>
+                  <td class="px-6 py-4">2</td>
+                  <td class="px-6 py-4">$50AED</td>
+                  <td class="px-6 py-4">
+                    <a href="./ticketDetails.html" class="btn btn-primary"
+                      >View</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Card -1 -->
+        </div>
+
         <!-- My profile Part  -->
       </section>
       <!-- Profile Section -->
@@ -380,7 +377,7 @@
 
     <!-- Modal Section  -->
 
-    <div class="modal hidden" id="modal">
+    <div class="modal hidden2" id="modal">
       <div class="modal-body">
         <div class="modal-header">
           <h2>Edit Your Information</h2>
@@ -559,12 +556,12 @@
         document
           .getElementById("modal-btn")
           .addEventListener("click", function () {
-            document.getElementById("modal").classList.remove("hidden");
+            document.getElementById("modal").classList.remove("hidden2");
           });
         document
           .getElementById("modal-close")
           .addEventListener("click", function () {
-            document.getElementById("modal").classList.add("hidden");
+            document.getElementById("modal").classList.add("hidden2");
           });
       });
     </script>
