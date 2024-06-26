@@ -1,0 +1,42 @@
+.web-content-section .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+}
+.web-content-section .btn-text {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.table-head {
+  font-weight: 200;
+  color: #757b7e;
+  background-color: #eaeff4;
+  text-transform: uppercase;
+}
+
+.selectTr {
+  font-weight: bold;
+  color: #757b7e;
+  background-color: #eaeff4;
+  text-transform: uppercase;
+}
+
+.action-btn-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.action-btn-table svg {
+  width: 30px;
+  color: red;
+  height: 30px;
+}
+
+.action-btn-table .bi,
+.action-btn-table svg {
+  font-size: 20px;
+}

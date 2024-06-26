@@ -1,0 +1,452 @@
+/* ! Dark mood Start here  */
+[data-bs-theme="dark"] .order-list-section .btn-order-list {
+  background: #323743;
+  color: white;
+}
+[data-bs-theme="dark"] .faq-list-section .faq-accordion-item-header,
+[data-bs-theme="dark"] .faq-list-section .faq-accordion-item-header .bi-pencil,
+[data-bs-theme="dark"] .faq-list-section .faq-accordion-item-body-content {
+  color: #fff;
+  background: #323743;
+}
+[data-bs-theme="dark"] .faq-accordion-item-body-content p {
+  color: white;
+}
+[data-bs-theme="dark"] .faq-accordion-item-header .faq-category {
+  border-color: #4f5467;
+  color: #fff;
+  opacity: 1;
+}
+[data-bs-theme="dark"] .tab-content-3 .slider:before {
+  background: #e2e2e2;
+}
+[data-bs-theme="dark"]
+  .tab-content-3
+  input:not(:checked)
+  + .slider
+  .switch-text-no {
+  color: #e2e2e2;
+}
+[data-bs-theme="dark"] .btn-order-clip {
+  background: #0a0b0c;
+}
+[data-bs-theme="dark"] .order-list-section .order-summery h3,
+[data-bs-theme="dark"] .order-list-section .customer-service-order h3,
+[data-bs-theme="dark"] .order-list-section .order-summery h3 {
+  color: #fff;
+}
+[data-bs-theme="dark"] .order-list-section .order-summery .main-summery-order {
+  background: #0a0b0c;
+  color: #fff;
+}
+[data-bs-theme="dark"] .order-list-section .customer-service-order ul li,
+[data-bs-theme="dark"] .order-list-section .order-summery ul li {
+  background: #0a0b0c;
+  color: #fff;
+}
+
+/*  Dark theme Mood End Here  */
+.order-list-section .btn-order-list {
+  color: #757b7e;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  border: 1px solid #eaeff4;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px 15px;
+}
+.order-list-section .btn-order-list.active {
+  color: #fca311;
+  border: #fca311 1px solid;
+}
+
+.btn-order-clip {
+  color: #3076bc;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #dbdbdbc0;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 8px 0 0 0px;
+}
+.btn-order-clip.active {
+  background-color: #fca311;
+  color: white;
+}
+
+.custom-checkbox i {
+  margin: 0 -12px;
+}
+
+/*  Order List  */
+
+/*  Order Summery  */
+.section-title-active {
+  color: #fca311;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.order-list-section .order-summery-main-div {
+  display: flex;
+  flex-direction: column;
+}
+.order-list-section .order-summery {
+  max-width: 23rem;
+  width: 100%;
+}
+.order-list-section .customer-service-order h3,
+.order-list-section .order-summery h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #323743;
+}
+.order-list-section .customer-service-order .main-summery-order,
+.order-list-section .order-summery .main-summery-order {
+  color: #0a0b0c;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.order-list-section .customer-service-order ul {
+  list-style: none;
+}
+.order-list-section .order-summery ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.order-list-section .customer-service-order ul li,
+.order-list-section .order-summery ul li {
+  padding: 1.4rem 1.2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #d6d6d6;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.order-list-section .customer-service-order ul li .element,
+.order-list-section .order-summery ul li .element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-align: justify;
+  font-size: 18px;
+}
+/*  Order Summery  */
+
+.tab-content-3 .switch {
+  position: relative;
+  display: inline-block;
+  width: 85px;
+  height: 35px;
+}
+
+/* Hide default HTML checkbox */
+.tab-content-3 .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.tab-content-3 .slider {
+  width: 100%;
+  height: 35px;
+}
+.tab-content-3 .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1.4px solid #fca311;
+}
+
+.tab-content-3 .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 7px;
+  bottom: 3px;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.tab-content-3 input:checked + .slider {
+  background-color: transparent;
+}
+
+.tab-content-3 input:focus + .slider {
+  box-shadow: 0 0 1px #fca311;
+}
+
+.tab-content-3 input:checked + .slider:before {
+  left: 20px;
+  transform: translateX(27px);
+  background-color: #fca311;
+  -webkit-transform: translateX(27px);
+  -moz-transform: translateX(27px);
+  -ms-transform: translateX(27px);
+  -o-transform: translateX(27px);
+}
+
+/* Rounded sliders */
+.tab-content-3 .slider.round {
+  border-radius: 40px;
+}
+
+.tab-content-3 .slider.round:before {
+  border-radius: 50%;
+}
+
+/* Add text to the switch button */
+.tab-content-3 .switch-text {
+  position: absolute;
+}
+
+.tab-content-3 input:checked + .slider .switch-text-yes {
+  display: block;
+  top: 50%;
+  left: 20%;
+  transform: translate(-25%, -50%);
+  font-size: 15px;
+  color: #fca311;
+  font-weight: 600;
+  -webkit-transform: translate(-25%, -50%);
+  -moz-transform: translate(-25%, -50%);
+  -ms-transform: translate(-25%, -50%);
+  -o-transform: translate(-25%, -50%);
+}
+
+.tab-content-3 input:checked + .slider .switch-text-no {
+  display: none;
+}
+
+.tab-content-3 input:not(:checked) + .slider .switch-text-yes {
+  display: none;
+}
+
+.tab-content-3 input:not(:checked) + .slider .switch-text-no {
+  display: block;
+  top: 50%;
+  right: 10%;
+  transform: translate(-10%, -50%);
+  font-size: 15px;
+  font-weight: 600;
+  color: #192328;
+}
+
+/*  Contract Page  */
+.contract-table .name-badge {
+  background-color: #ffe0e1;
+  color: #343a40;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+}
+
+/*  Contract Page  */
+
+.faq-accordion {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.faq-accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 0.6rem 0;
+  border-radius: 0.2rem;
+  /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  */
+}
+
+.faq-accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.faq-accordion-item-header .faq-category {
+  color: #646464;
+  font-size: 12px;
+  border: 1px solid rgba(100, 100, 100, 0.7);
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.faq-accordion-btn-icon {
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out;
+  -moz-transition: all ease-in-out;
+  -ms-transition: all ease-in-out;
+  -o-transition: all ease-in-out;
+}
+.faq-accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq-accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  color: #192328;
+  font-weight: 400;
+}
+.faq-accordion-item-body-content p {
+  color: #757b7e;
+  font-weight: 400;
+}
+
+/*  Contact Delete Modal  */
+
+[data-bs-theme="dark"] .contactDeleteModal .modal-content {
+  background-color: #192328;
+}
+[data-bs-theme="dark"] .contactDeleteModal .modal-body .text-black {
+  color: white !important;
+}
+.contactDeleteModal .modal-body h2 {
+  font-size: 24px !important;
+  font-weight: 400;
+}
+.contactDeleteModal .modal-body .text-black {
+  color: #192328;
+  font-weight: 400;
+}
+.main-event-conditions {
+  margin-top: 1.4rem;
+}
+[data-bs-theme="dark"] .main-event-conditions .box-1,
+[data-bs-theme="dark"] .main-event-conditions .box-2 {
+  background-color: #192328;
+}
+[data-bs-theme="dark"] .main-event-conditions .box-1 .box-1-head h3,
+[data-bs-theme="dark"] .main-event-conditions .box-2 .box-1-head h3 {
+  color: white;
+}
+[data-bs-theme="dark"] .main-event-conditions .box-1 .box-1-head i,
+[data-bs-theme="dark"] .main-event-conditions .box-2 .box-1-head i {
+  color: white;
+}
+[data-bs-theme="dark"] .main-event-conditions .box-1 .box-1-text,
+[data-bs-theme="dark"] .main-event-conditions .box-2 .box-1-text {
+  color: white;
+}
+
+.main-event-conditions .box-1 {
+  background-color: #fff;
+  padding: 2rem;
+  color: #646464;
+  font-family: Montserrat;
+  border-bottom: 1px solid #e9e9e9b9;
+  border-radius: 1rem 1rem 0 0;
+  -webkit-border-radius: 1rem 1rem 0 0;
+  -moz-border-radius: 1rem 1rem 0 0;
+  -ms-border-radius: 1rem 1rem 0 0;
+  -o-border-radius: 1rem 1rem 0 0;
+}
+.main-event-conditions .box-2 {
+  background-color: #fff;
+  padding: 2rem;
+  color: #646464;
+  font-family: Montserrat;
+  border-radius: 0 0 1rem 1rem;
+  -webkit-border-radius: 0 0 1rem 1rem;
+  -moz-border-radius: 0 0 1rem 1rem;
+  -ms-border-radius: 0 0 1rem 1rem;
+  -o-border-radius: 0 0 1rem 1rem;
+}
+.main-event-conditions .box-1 .box-1-head,
+.main-event-conditions .box-2 .box-1-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.main-event-conditions .box-1 .box-1-head h3,
+.main-event-conditions .box-2 .box-1-head h3 {
+  font-weight: 600;
+  color: #192328;
+}
+.main-event-conditions .box-1 .box-1-text,
+.main-event-conditions .box-2 .box-1-text {
+  font-weight: 400;
+  color: #192328;
+  font-size: 16px;
+}
+
+/*  Media Query */
+
+@media screen and (max-width: 968px) {
+  .order-list-section .order-summery {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 968px) and (max-width: 1190px) {
+  .order-list-section .order-summery {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .order-list-section .order-summery-main-div {
+    display: flex;
+    flex-direction: row;
+  }
+  .order-list-section .order-summery {
+    max-width: 50rem;
+    width: 100%;
+  }
+  .order-list-section .customer-service-order ul li {
+    padding: 1.3rem;
+    margin: 0 5rem 0 0;
+  }
+}
+
+@media (min-width: 1480px) {
+  .order-list-section .customer-service-order ul li {
+    padding: 1.5rem 5rem;
+    margin: 0 5rem 0 0;
+  }
+}

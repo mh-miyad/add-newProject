@@ -1,0 +1,121 @@
+/* her I work With dark Mood  */
+[data-bs-theme="dark"] .tab-group {
+  background: #676767bf;
+}
+[data-bs-theme="dark"] .editor-titile {
+  color: azure;
+}
+[data-bs-theme="dark"] #tab-content-2 .form-label,
+[data-bs-theme="dark"] #tab-content-3 .card-title,
+[data-bs-theme="dark"] #tab-content-3 .card-text {
+  color: white;
+}
+[data-bs-theme="dark"] #tab-content-2 input,
+[data-bs-theme="dark"] #tab-content-3 .card-body,
+[data-bs-theme="dark"] #tab-content-2 textarea {
+  background: #1e1e1e;
+}
+/* her I work With dark Mood  */
+
+/* her I work With light Mood */
+.tab-group {
+  display: flex;
+  width: 100%;
+}
+.tab-btn-all {
+  width: 15rem;
+  height: 3.5rem;
+  border: none;
+  border-right: #e7e6e69d 2px solid;
+  text-transform: capitalize;
+  background-color: transparent;
+  font-family: 400;
+}
+.tab-btn-all i {
+  display: none;
+}
+.done-target {
+  width: 15rem;
+  height: 3.5rem;
+  border: none;
+  border-right: #e7e6e69d 2px solid;
+  text-transform: capitalize;
+  background-color: transparent;
+  font-family: 400;
+  color: #2fa62c !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.done-target i {
+  display: block;
+}
+
+.tab-btn-demo {
+  color: #2fa62c !important;
+  text-transform: uppercase !important;
+  width: 15rem;
+  height: 3.5rem;
+  border: none;
+  border-right: #e7e6e69d 2px solid;
+  text-transform: capitalize;
+  background-color: transparent;
+  font-family: 400;
+}
+
+.tab-group .tab-btn-active {
+  color: #fca311;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: #fca311 3px solid;
+  border-radius: 8px;
+  -webkit-border-radius: 5px 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.tab-group .tab-btn-active i {
+  display: none;
+}
+#tab-content-2 .form-label {
+  color: black;
+}
+/* text Editor */
+.editor-titile {
+  color: black;
+  margin: 20px 0px;
+}
+.making-ai {
+  position: absolute;
+  bottom: 120px;
+  right: 10px;
+}
+.ai-text-editor {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+}
+.text-tomato {
+  color: #fca311;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+/* text Editor */
+
+@media screen and (max-width: 768px) {
+  .tab-group {
+    flex-wrap: wrap;
+  }
+  .tab-btn-all,
+  .tab-btn-demo {
+    width: 100% !important;
+    height: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .tab-group {
+    flex-wrap: nowrap;
+  }
+}

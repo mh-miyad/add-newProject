@@ -1,0 +1,187 @@
+.show-on-991 {
+  display: none! important;
+}
+
+.hide-on-991 {
+  display: block! important;
+}
+
+.show-on-767 {
+  display: none! important;
+}
+
+.hide-on-767 {
+  display: block! important;
+}
+
+.show-on-768 {
+  display: none! important;
+}
+
+.hide-on-768 {
+  display: block! important;
+}
+
+.show-on-575 {
+  display: none! important;
+}
+
+.hide-on-575 {
+  display: block! important;
+}
+
+.show-on-480 {
+  display: none! important;
+}
+
+.hide-on-480 {
+  display: block! important;
+}
+
+
+@media (max-width: 1600px) {
+  .event-box {
+    width: 100%;
+  }
+
+  .event-box .top-title {
+    font-size: 20px;
+  }
+
+  .event-box .card .card-header h3 {
+    font-size: 1rem;
+  }
+
+  .event-box .card {
+    min-width: 200px;
+    width: 100%;
+  }
+/* 
+  .event-box .card .card-footer {
+    flex-direction: column;
+    justify-content: center;
+  } */
+
+  .event-box .card .card-header span {
+    font-size: 18px;
+  }
+
+  .event-box .card .card-body p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1380px) {
+  
+
+}
+
+@media (max-width: 1100px) {
+  
+}
+
+@media (max-width: 1024px) {
+  
+}
+@media (max-width: 991px) {
+  
+  
+}
+
+@media (max-width: 768px) {
+
+  .show-on-768 {
+    display: block! important;
+  }
+  
+  .hide-on-768 {
+    display: none! important;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .show-on-767 {
+    display: block! important;
+  }
+  
+  .hide-on-767 {
+    display: none! important;
+  }
+
+}
+
+@media (max-width: 575px) {
+  
+  
+  .show-on-575 {
+    display: block! important;
+  }
+
+  .hide-on-575 {
+    display: none! important;
+  }
+}
+
+@media (max-width: 480px) {
+  .show-on-480 {
+    display: block! important;
+  }
+  
+  .hide-on-480 {
+    display: none! important;
+  }
+
+}
+
+@media (max-width: 380px) {
+  
+}
+
+@media (max-width: 340px) {
+}
+
+
+
+/* =====================
+   desktop
+   min-width: 768px;
+   max-width: 1024px;
+
+===================== */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+
+
+/* =====================
+
+   Tablets
+   min-width: 640px;
+   max-width: 767px;
+
+===================== */
+
+@media (min-width: 640px) and (max-width: 767px) {
+  
+}
+
+
+
+/* =====================
+
+   Small Devices
+   min-width: 320px;
+   max-width: 479px;
+
+===================== */
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+  
+
+}
