@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Image/icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/output.css" />
+    <link rel="stylesheet" href="./style/Custom.css" />
+    <link rel="stylesheet" href="./style/demo.css" />
+
+    <title>EvensPRO - Buy Tickets</title>
+  </head>
+  <body>
+    <header class="">
+      <!-- Navbar  -->
+      <nav class="navBar-fixed">
+        <div class="navBar mx-auto max-w-[1320px]">
+          <!-- Logo  -->
+          <a href="./home.html">
+            <img src="./Assets/logo-2.svg" alt="" />
+          </a>
+          <!-- Logo  -->
+          <!-- right side Of nav bar  -->
+          <div class="hidden lg:block">
+            <ul class="nav-links">
+              <li>
+                <a href="./home.html"> Brows Event </a>
+              </li>
+              <li>
+                <a href="./login.html"> Sign In </a>
+              </li>
+              <li>
+                <button class="btn btn-lg btn-primary">Buy Tickets</button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-drawer-target="drawer-right-example"
+                  data-drawer-show="drawer-right-example"
+                  data-drawer-placement="right"
+                  aria-controls="drawer-right-example"
+                  class="btn btn-profile cart-btn relative inline-flex items-center"
+                >
+                  <i class="bi bi-cart4"></i>
+                  <span class="sr-only">Add to Cart</span>
+                  <div class="badgeBox">0</div>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              data-drawer-target="drawer-right-example"
+              data-drawer-show="drawer-right-example"
+              data-drawer-placement="right"
+              aria-controls="drawer-right-example"
+              class="btn-profile cart-btn relative inline-flex items-center rounded px-3 py-1"
+            >
+              <i class="bi bi-cart4 text-xl"></i>
+              <span class="sr-only">Add Cart</span>
+              <div class="badgeBox">0</div>
+            </button>
+            <button
+              class="btn-primary mx-2 px-2 py-1"
+              type="button"
+              data-te-offcanvas-toggle
+              data-te-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <span class="sr-only"> Open menu </span>
+              <i class="bi bi-list text-xl"></i>
+            </button>
+          </div>
+          <!-- right side Of nav bar  -->
+        </div>
+      </nav>
+      <!-- Navbar  -->
+      <!-- Navbar For Mobile Version  -->
+      <!-- <button
+        class="btn btn-lg bg-pink-400"
+       
+      >
+        Toggle right offcanvas
+      </button> -->
+
+      <!-- Navbar For Mobile Version  -->
+      <div
+        class="navbar-responsive"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+        data-te-offcanvas-init
+      >
+        <!--  Header Part Of Responsive navbar  -->
+        <div class="flex items-center justify-between p-4">
+          <h5
+            class="mb-0 font-semibold leading-normal"
+            id="offcanvasRightLabel"
+          ></h5>
+          <button
+            type="button"
+            class="close-btn-navbar"
+            data-te-offcanvas-dismiss
+          >
+            <span class="sr-only">Close Button </span>
+            <i class="bi bi-x-lg text-danger-600"></i>
+          </button>
+        </div>
+        <!--  Header Part Of Responsive navbar  -->
+        <!-- ! Main navbar Of Responsive navbar -->
+        <div class="offcanvas-body flex-grow overflow-y-auto p-4">
+          <ul class="nav-links-responsive">
+            <li>
+              <a href="./home.html"> Brows Event </a>
+            </li>
+            <li>
+              <a href="./login.html"> Sign In </a>
+            </li>
+            <li>
+              <button class="btn btn-lg btn-primary">Buy Tickets</button>
+            </li>
+          </ul>
+        </div>
+        <!-- ! Main navbar Of Responsive navbar -->
+      </div>
+      <!-- Navbar For Mobile Version  -->
+      <!--  Header Content  -->
+      <div class="header-part-home">
+        <div class="header-content">
+          <h1 class="text-stroke">
+            Welcome To Our <br />
+            <span class="header-image">
+              <img src="./Assets/Image/Group 1216404193.svg" class="" alt="" />
+            </span>
+            Online Ticketing System
+          </h1>
+          <button class="btn btn-lg btn-primary mt-4">Buy Tickets</button>
+        </div>
+      </div>
+      <!--  Header Content  -->
+    </header>
+    <main class="details-main-part">
+      <section class="my-10">
+        <h2 class="mb-3 bg-[#FCA311] p-2.5 px-10 text-3xl text-white">
+          Find Event
+        </h2>
+        <!--  here  -->
+        <div class="border px-10 py-5">
+          <div
+            class="flex flex-col items-start justify-between gap-6 lg:flex-row"
+          >
+            <div class="">
+              <p class="mx-10 text-base text-slate-600">
+                <i class="bi bi-calendar3"></i> Sun, September 01, 03.00PM -
+                Tue, September 03, 06.00PM
+                <i class="bi bi-geo-alt-fill"></i> Blocks 5, 14 & 15, Dubai
+                Knowledge Park - Dubai - United Arab Emirates
+              </p>
+              <!-- Box 1  -->
+              <div
+                class="my-4 flex items-center justify-between border px-5 py-3"
+              >
+                <p class="">
+                  <span class="text-xl font-bold">Adults</span> <br />
+                  <span class="text-sm">
+                    <b>AED 100</b> | Sales end on Mon, September 02, 2019</span
+                  >
+                </p>
+                <select
+                  name="adult"
+                  id="adults"
+                  class="form-select rounded-md px-5 py-1.5"
+                >
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <!-- Box 1  -->
+              <!-- Box 2  -->
+              <div
+                class="my-4 flex items-center justify-between border px-5 py-3"
+              >
+                <p class="">
+                  <span class="text-xl font-bold">Student</span> <br />
+                  <span class="text-sm">
+                    <b>AED 50</b> | Sales end on Mon, September 02, 2019</span
+                  >
+                </p>
+                <select
+                  name="adult"
+                  id="adults"
+                  class="form-select rounded-md px-5 py-1.5"
+                >
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <!-- Box 2 -->
+            </div>
+            <div class="h-auto w-full max-w-xs border-2 px-6 py-5">
+              <h3 class="mb-6 text-3xl font-bold text-slate-900">
+                Order Summery
+              </h3>
+              <hr />
+              <div class="my-3 flex items-center justify-between">
+                <p class="text-xl font-[500]"><span>0</span> x Adults</p>
+                <p class="text-xl font-bold">AED - <span>0</span></p>
+              </div>
+              <div class="mb-8 flex items-center justify-between">
+                <p class="text-xl font-[500]"><span>0</span> x Student</p>
+                <p class="text-xl font-bold">AED - <span>0</span></p>
+              </div>
+              <hr />
+              <div class="my-5 flex items-center justify-between">
+                <p class="text-xl font-bold">TOTAL</p>
+                <p class="text-xl font-bold">000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 flex justify-end">
+            <a href="./checkOut.html" class="btn btn-primary">Checkout</a>
+          </div>
+        </div>
+      </section>
+      <section class="section entry-list-section" id="entry-list-section">
+        <h2 class="mb-3 bg-[#FCA311] p-2.5 px-10 text-3xl text-white">
+          Find Your Booking Seat
+        </h2>
+        <div
+          class="px-5 py-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+        >
+          <div class="accordion-body-content">
+            <div class="seat-tab">
+              <div class="tab-nav inner-tab-nav">
+                <ul class="nav nav-pills" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      data-bs-toggle="tab"
+                      href="#royalC"
+                      role="tab"
+                    >
+                      <span>Royal-C</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#royalB"
+                      role="tab"
+                    >
+                      <span>Royal-B</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#Silver-F"
+                      role="tab"
+                    >
+                      <span>Silver-F</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#Silver-F2"
+                      role="tab"
+                    >
+                      <span>Silver-F</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#Gold-F"
+                      role="tab"
+                    >
+                      <span>Gold-F</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#Gold-F2"
+                      role="tab"
+                    >
+                      <span>Gold-F</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content">
+                <div class="tab-title">
+                  <h4>Choose your seat(s)</h4>
+                </div>
+                <div class="tab-pane active" id="royalC" role="tabpanel">
+                  <div class="seat-activation-box">
+                    <div class="row g-4">
+                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="seat-booking">
+                          <ul id="seatDescription" class="seatDescription">
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/available_seat_img.png');
+                              "
+                            >
+                              Available Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/booked_seat_img.png');
+                              "
+                            >
+                              Booked Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/selected_seat_img.png');
+                              "
+                            >
+                              Selected Seat
+                            </li>
+                          </ul>
+                          <div id="holder">
+                            <ul id="place" class="seat-place">
+                              <li class="seat">
+                                <a title="A1">A 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A2">A 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A3">A 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A4">A 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A5">A 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A6">A 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A7">A 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A8">A 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A9">A 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A10">A 10</a>
+                              </li>
+                              <li class="seat selectedSeat">
+                                <a title="B1">B 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B2">B 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B3">B 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B4">B 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B5">B 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B6">B 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B7">B 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B8">B 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B9">B 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B10">B 10</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div style="float: left"></div>
+                          <div style="clear: both; width: 100%">
+                            <input
+                              type="button"
+                              class="btn btn-primary btnShowNew"
+                              id="btnShowNew"
+                              value="Show Selected Seats"
+                            />
+                            <input
+                              type="button"
+                              class="btn btn-light-primary btnShow"
+                              id="btnShow"
+                              value="Show All"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="seat-map">
+                          <img
+                            src="assets/images/seat-map.jpg"
+                            alt="seat-map"
+                            class="img-fluid mx-auto w-100"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="royalB" role="tabpanel">
+                  <div class="seat-activation-box">
+                    <div class="row g-4">
+                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="seat-booking">
+                          <ul id="seatDescription" class="seatDescription">
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/available_seat_img.png');
+                              "
+                            >
+                              Available Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/booked_seat_img.png');
+                              "
+                            >
+                              Booked Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/selected_seat_img.png');
+                              "
+                            >
+                              Selected Seat
+                            </li>
+                          </ul>
+                          <div id="holder">
+                            <ul id="place" class="seat-place">
+                              <li class="seat">
+                                <a title="A1">A 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A2">A 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A3">A 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A4">A 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A5">A 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A6">A 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A7">A 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A8">A 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A9">A 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A10">A 10</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B1">B 1</a>
+                              </li>
+                              <li class="seat selectedSeat">
+                                <a title="B2">B 2</a>
+                              </li>
+                              <li class="seat selectedSeat">
+                                <a title="B3">B 3</a>
+                              </li>
+                              <li class="seat selectedSeat">
+                                <a title="B4">B 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B5">B 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B6">B 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B7">B 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B8">B 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B9">B 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B10">B 10</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div style="float: left"></div>
+                          <div style="clear: both; width: 100%">
+                            <input
+                              type="button"
+                              class="btn btn-primary btnShowNew"
+                              id="btnShowNew"
+                              value="Show Selected Seats"
+                            />
+                            <input
+                              type="button"
+                              class="btn btn-light-primary btnShow"
+                              id="btnShow"
+                              value="Show All"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="seat-map">
+                          <img
+                            src="assets/images/seat-map.jpg"
+                            alt="seat-map"
+                            class="img-fluid mx-auto w-100"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="Silver-F" role="tabpanel">
+                  <div class="seat-activation-box">
+                    <div class="row g-4">
+                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="seat-booking">
+                          <ul id="seatDescription" class="seatDescription">
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/available_seat_img.png');
+                              "
+                            >
+                              Available Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/booked_seat_img.png');
+                              "
+                            >
+                              Booked Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/selected_seat_img.png');
+                              "
+                            >
+                              Selected Seat
+                            </li>
+                          </ul>
+                          <div id="holder">
+                            <ul id="place" class="seat-place">
+                              <li class="seat">
+                                <a title="A1">A 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A2">A 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A3">A 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A4">A 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A5">A 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A6">A 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A7">A 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A8">A 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A9">A 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A10">A 10</a>
+                              </li>
+                              <li class="seat selectedSeat">
+                                <a title="B1">B 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B2">B 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B3">B 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B4">B 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B5">B 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B6">B 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B7">B 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B8">B 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B9">B 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B10">B 10</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div style="float: left"></div>
+                          <div style="clear: both; width: 100%">
+                            <input
+                              type="button"
+                              class="btn btn-primary btnShowNew"
+                              id="btnShowNew"
+                              value="Show Selected Seats"
+                            />
+                            <input
+                              type="button"
+                              class="btn btn-light-primary btnShow"
+                              id="btnShow"
+                              value="Show All"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="seat-map">
+                          <img
+                            src="assets/images/seat-map.jpg"
+                            alt="seat-map"
+                            class="img-fluid mx-auto w-100"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="Silver-F2" role="tabpanel">
+                  <div class="seat-activation-box">
+                    <div class="row g-4">
+                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="seat-booking">
+                          <ul id="seatDescription" class="seatDescription">
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/available_seat_img.png');
+                              "
+                            >
+                              Available Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/booked_seat_img.png');
+                              "
+                            >
+                              Booked Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/selected_seat_img.png');
+                              "
+                            >
+                              Selected Seat
+                            </li>
+                          </ul>
+                          <div id="holder">
+                            <ul id="place" class="seat-place">
+                              <li class="seat">
+                                <a title="A1">A 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A2">A 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A3">A 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A4">A 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A5">A 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A6">A 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A7">A 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A8">A 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A9">A 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A10">A 10</a>
+                              </li>
+                              <li class="seat selectedSeat">
+                                <a title="B1">B 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B2">B 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B3">B 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B4">B 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B5">B 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B6">B 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B7">B 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B8">B 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B9">B 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B10">B 10</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div style="float: left"></div>
+                          <div style="clear: both; width: 100%">
+                            <input
+                              type="button"
+                              class="btn btn-primary btnShowNew"
+                              id="btnShowNew"
+                              value="Show Selected Seats"
+                            />
+                            <input
+                              type="button"
+                              class="btn btn-light-primary btnShow"
+                              id="btnShow"
+                              value="Show All"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="seat-map">
+                          <img
+                            src="assets/images/seat-map.jpg"
+                            alt="seat-map"
+                            class="img-fluid mx-auto w-100"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="Gold-F" role="tabpanel">
+                  <div class="seat-activation-box">
+                    <div class="row g-4">
+                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="seat-booking">
+                          <ul id="seatDescription" class="seatDescription">
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/available_seat_img.png');
+                              "
+                            >
+                              Available Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/booked_seat_img.png');
+                              "
+                            >
+                              Booked Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/selected_seat_img.png');
+                              "
+                            >
+                              Selected Seat
+                            </li>
+                          </ul>
+                          <div id="holder">
+                            <ul id="place" class="seat-place">
+                              <li class="seat">
+                                <a title="A1">A 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A2">A 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A3">A 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A4">A 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A5">A 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A6">A 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A7">A 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A8">A 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A9">A 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A10">A 10</a>
+                              </li>
+                              <li class="seat selectedSeat">
+                                <a title="B1">B 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B2">B 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B3">B 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B4">B 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B5">B 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B6">B 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B7">B 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B8">B 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B9">B 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B10">B 10</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div style="float: left"></div>
+                          <div style="clear: both; width: 100%">
+                            <input
+                              type="button"
+                              class="btn btn-primary btnShowNew"
+                              id="btnShowNew"
+                              value="Show Selected Seats"
+                            />
+                            <input
+                              type="button"
+                              class="btn btn-light-primary btnShow"
+                              id="btnShow"
+                              value="Show All"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="seat-map">
+                          <img
+                            src="assets/images/seat-map.jpg"
+                            alt="seat-map"
+                            class="img-fluid mx-auto w-100"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="Gold-F2" role="tabpanel">
+                  <div class="seat-activation-box">
+                    <div class="row g-4">
+                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="seat-booking">
+                          <ul id="seatDescription" class="seatDescription">
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/available_seat_img.png');
+                              "
+                            >
+                              Available Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/booked_seat_img.png');
+                              "
+                            >
+                              Booked Seat
+                            </li>
+                            <li
+                              style="
+                                background-image: url('assets/images/icons/selected_seat_img.png');
+                              "
+                            >
+                              Selected Seat
+                            </li>
+                          </ul>
+                          <div id="holder">
+                            <ul id="place" class="seat-place">
+                              <li class="seat">
+                                <a title="A1">A 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A2">A 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A3">A 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A4">A 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A5">A 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A6">A 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A7">A 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A8">A 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A9">A 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="A10">A 10</a>
+                              </li>
+                              <li class="seat selectedSeat">
+                                <a title="B1">B 1</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B2">B 2</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B3">B 3</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B4">B 4</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B5">B 5</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B6">B 6</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B7">B 7</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B8">B 8</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B9">B 9</a>
+                              </li>
+                              <li class="seat">
+                                <a title="B10">B 10</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div style="float: left"></div>
+                          <div style="clear: both; width: 100%">
+                            <input
+                              type="button"
+                              class="btn btn-primary btnShowNew"
+                              id="btnShowNew"
+                              value="Show Selected Seats"
+                            />
+                            <input
+                              type="button"
+                              class="btn btn-light-primary btnShow"
+                              id="btnShow"
+                              value="Show All"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="seat-map">
+                          <img
+                            src="assets/images/seat-map.jpg"
+                            alt="seat-map"
+                            class="img-fluid mx-auto w-100"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ** here Start Ticket Box That i comment in my code and In Future i will add it then Comment Out  -->
+            <!-- <div class="ticket-box">
+              <div class="ticket-inner-box">
+                <div class="row g-3 align-items-center justify-content-between">
+                  <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="ticket-box-content">
+                      <h3>VIP</h3>
+                      <p>AED 150 <span>Sell end on</span></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 col-md-6 col-sm-12 col-12">
+                    <div class="ticket-box-content">
+                      <ul class="ticket-list">
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ticket-box">
+              <div class="ticket-inner-box">
+                <div class="row g-3 align-items-center justify-content-between">
+                  <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="ticket-box-content">
+                      <h3>Stand</h3>
+                      <p>AED 150 <span>Sell end on</span></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 col-md-6 col-sm-12 col-12">
+                    <div class="ticket-box-content">
+                      <ul class="ticket-list">
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- ** here Start Ticket Box That i comment in my code and In Future i will add it then Comment Out  -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- drawer component -->
+    <div
+      id="drawer-right-example"
+      class="drawer-toggle translate-x-full"
+      tabindex="-1"
+      aria-labelledby="drawer-right-label"
+    >
+      <h5
+        id="drawer-right-label"
+        class="mb-4 inline-flex items-center text-base font-semibold text-gray-500 dark:text-gray-400"
+      >
+        Your Cart Item
+      </h5>
+      <button
+        type="button"
+        data-drawer-hide="drawer-right-example"
+        aria-controls="drawer-right-example"
+        class="btn btn-xs absolute end-6 top-2.5 mr-9 inline-flex size-8 items-center"
+      >
+        <i class="bi bi-x-lg border text-2xl text-red-600"></i>
+        <span class="sr-only">Close menu</span>
+      </button>
+      <!--  Body Of drawer -->
+      <div>
+        <div class="w-full bg-white py-3">
+          <div class="flex justify-between border-b pb-3">
+            <h1 class="text-2xl font-semibold">Shopping Cart</h1>
+            <h2 class="text-2xl font-semibold">3 Items</h2>
+          </div>
+          <!-- item one  -->
+          <div class="flex items-center justify-between border-b">
+            <div class="flex items-center gap-4">
+              <img
+                class="h-24 w-24 object-cover object-center"
+                src="https://chaldn.com/_mpimage/cadbury-dairy-milk-silk-roast-almond-chocolate-bar-143-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D128513&q=best&v=1&m=400&webp=1"
+                alt=""
+              />
+              <h2 class="text-lg font-semibold">Alooz Chips</h2>
+            </div>
+            <div class="flex items-center gap-2">
+              <label for="cart-shopping" class="sr-only">Quantity</label>
+              <button
+                class="border border-black/50 px-2 py-1 text-lg font-bold"
+              >
+                <i class="bi bi-dash"></i>
+              </button>
+              <input
+                type="text"
+                id="cart-shopping"
+                value="1"
+                class="form-input w-10 py-1.5 text-center"
+                name="cart-shopping"
+              />
+              <button
+                class="border border-black/50 px-2 py-1 text-lg font-bold"
+              >
+                <i class="bi bi-plus"></i>
+              </button>
+            </div>
+            <span id="price" class="mr-4 text-xl font-semibold">$20</span>
+            <button id="price" class="mr-4 text-lg">
+              <span class="sr-only">remove item </span>
+              <i class="bi bi-trash text-danger"></i>
+            </button>
+          </div>
+
+          <!-- item One End   -->
+        </div>
+        <div class="absolute bottom-10 w-10/12 right-10">
+          <a
+            href="./productCheckOut.html"
+            class="w-full block rounded-md bg-[#14213D] text-white text-center px-8 py-3"
+          >
+            CheckOut
+          </a>
+        </div>
+      </div>
+      <!--  Body Of drawer -->
+    </div>
+
+    <!-- Modal Section  -->
+    <div
+      id="default-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      style="top: 40%"
+      class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div
+        class="relative p-4 w-full"
+        style="max-height: 100vh; max-width: 680px"
+      >
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div
+            class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+          >
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Tittle
+            </h3>
+            <button
+              type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+              data-modal-hide="default-modal"
+            >
+              <svg
+                class="w-3 h-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="red"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-4 md:p-5 space-y-4">
+            <div class="qr-code-genarate">
+              <img
+                src="assets/images/QR-Code-Transparent.png"
+                alt="QR-Code-Transparent"
+                class="img-fluid mx-auto"
+              />
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center p-4 gap-3 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600"
+          >
+            <button
+              data-modal-hide="default-modal"
+              type="button"
+              class="btn btn-warning"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Section  -->
+    <!-- Modal -->
+
+    <!-- Footer Section  -->
+
+    <footer class="bg-[#14213D] text-white pt-14">
+      <div class=" ">
+        <div class="mx-auto max-w-[1320px] footer-mob xl:footer-desk px-5">
+          <!-- logo and about topic section   -->
+          <div class="max-w-md">
+            <a href="./home.html">
+              <img
+                src="./Assets/Image/logo/logo.svg"
+                alt="company log "
+                class="mb-4"
+              />
+            </a>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              magni? Voluptate, ipsum.Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </p>
+            <p class="text-white mt-7">
+              Eos, magni? Voluptate, ipsum.Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Eos, magni? Voluptate, ipsum.
+            </p>
+          </div>
+          <!-- logo and about topic section   -->
+
+          <!-- Quick Link  -->
+          <div>
+            <h2 class="text-2xl font-semibold mb-4">Quick Link</h2>
+            <ul class="space-y-5 text-base mx-2">
+              <li>Browse Events</li>
+              <li>Help</li>
+              <li>Sign In</li>
+            </ul>
+          </div>
+          <!-- company  info -->
+          <div>
+            <h2 class="text-2xl font-semibold mb-4">Company Info</h2>
+            <ul class="space-y-5 text-base mx-2">
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+          <!-- company  info -->
+          <!-- Contact  US -->
+          <div>
+            <h2 class="text-2xl font-semibold mb-4">Contact US</h2>
+            <ul class="space-y-5 text-base mx-2">
+              <li>
+                <i class="bi bi-geo-alt"></i>
+                <span
+                  >3674 Loreal Street , Dipiscingco , <br />
+                  Dubai , UAE
+                </span>
+              </li>
+              <li>
+                <i class="bi bi-telephone"></i>
+                <span> +01 234 567 890</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope"></i>
+                <span> 0NqgH@example.com</span>
+              </li>
+            </ul>
+            <div class="flex space-x-5 text-3xl mt-4 mx-3">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
+          </div>
+          <!-- Contact  US -->
+        </div>
+
+        <hr class="opacity-30" />
+        <div class="footer-bottom">
+          <span>@2024 EvensPRO.All Rights Reserved.</span>
+          <span
+            >Design and Developed by
+            <a
+              href="https://www.royex.ae/"
+              target="_blank"
+              rel="noopener"
+              class="text-red-500 hover:underline underline-offset-4"
+            >
+              Royex Technologies
+            </a></span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Section  -->
+    <button id="scroll-btn">
+      <span class="sr-only">Scroll to Top </span>
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
+    <!-- Footer Section  -->
+    <!-- Script js And Jquery  -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/flowbite.js"></script>
+    <script src="./js/tw-elements.umd.min.js"></script>
+
+    <!-- <script src="./js/custom.js"></script> -->
+    <script>
+      const scrollBtn = document.getElementById("scroll-btn");
+
+      window.addEventListener("scroll", function () {
+        console.log(window.scrollY);
+        if (window.scrollY > 100) {
+          scrollBtn.classList.add("show"); /* Add 'show' class for animation */
+        } else {
+          scrollBtn.classList.remove("show"); /* Remove 'show' class to hide */
+        }
+      });
+
+      scrollBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
