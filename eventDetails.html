@@ -6,9 +6,50 @@
     <link
       rel="shortcut icon"
       href="./Assets/Image/icon.svg"
-      type="image/x-icon" />
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./style/output.css" />
+
     <link rel="stylesheet" href="./style/Custom.css" />
+    <style>
+      [data-tab-content] {
+        display: none;
+      }
+
+      .active[data-tab-content] {
+        display: block;
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        border: 1px solid rgb(182, 182, 182);
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .tab {
+        transition: all 0.3s ease;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .tab.active {
+        background-color: #fca311;
+        color: white;
+        font-weight: 700;
+      }
+
+      .tab:hover {
+        color: white;
+        background-color: #fca311;
+      }
+    </style>
     <title>EvensPRO - Home</title>
   </head>
   <body>
@@ -40,7 +81,8 @@
                   data-drawer-show="drawer-right-example"
                   data-drawer-placement="right"
                   aria-controls="drawer-right-example"
-                  class="btn btn-profile cart-btn relative inline-flex items-center">
+                  class="btn btn-profile cart-btn relative inline-flex items-center"
+                >
                   <i class="bi bi-cart4"></i>
                   <span class="sr-only">Add to Cart</span>
                   <div class="badgeBox">0</div>
@@ -55,7 +97,8 @@
               data-drawer-show="drawer-right-example"
               data-drawer-placement="right"
               aria-controls="drawer-right-example"
-              class="btn-profile cart-btn relative inline-flex items-center rounded px-3 py-1">
+              class="btn-profile cart-btn relative inline-flex items-center rounded px-3 py-1"
+            >
               <i class="bi bi-cart4 text-xl"></i>
               <span class="sr-only">Add Cart</span>
               <div class="badgeBox">0</div>
@@ -67,7 +110,8 @@
               data-te-target="#offcanvasRight"
               aria-controls="offcanvasRight"
               data-te-ripple-init
-              data-te-ripple-color="light">
+              data-te-ripple-color="light"
+            >
               <span class="sr-only"> Open menu </span>
               <i class="bi bi-list text-xl"></i>
             </button>
@@ -90,16 +134,19 @@
         tabindex="-1"
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
-        data-te-offcanvas-init>
+        data-te-offcanvas-init
+      >
         <!--  Header Part Of Responsive navbar  -->
         <div class="flex items-center justify-between p-4">
           <h5
             class="mb-0 font-semibold leading-normal"
-            id="offcanvasRightLabel"></h5>
+            id="offcanvasRightLabel"
+          ></h5>
           <button
             type="button"
             class="close-btn-navbar"
-            data-te-offcanvas-dismiss>
+            data-te-offcanvas-dismiss
+          >
             <span class="sr-only">Close Button </span>
             <i class="bi bi-x-lg text-danger-600"></i>
           </button>
@@ -131,7 +178,8 @@
         <img
           src="./Assets/detailsContentImage.png"
           alt=""
-          class="details-header-content-img" />
+          class="details-header-content-img"
+        />
       </div>
       <!--  Header Content  -->
     </section>
@@ -146,14 +194,16 @@
             Networks
           </h2>
           <div
-            class="flex items-center justify-end gap-2 text-base text-slate-500">
+            class="flex items-center justify-end gap-2 text-base text-slate-500"
+          >
             <p>Share with Friends:</p>
             <a href="#">
               <i class="bi bi-twitter mx-1 text-2xl hover:text-blue-400"></i>
             </a>
             <a href="#">
               <i
-                class="bi bi-instagram mx-1 text-2xl hover:text-fuchsia-600"></i>
+                class="bi bi-instagram mx-1 text-2xl hover:text-fuchsia-600"
+              ></i>
             </a>
             <a href="#">
               <span class="sr-only">facebook</span>
@@ -181,17 +231,580 @@
             </p>
           </div>
           <!-- Blog text -->
-          <div>
-            <h4 class="mb-4 text-2xl font-bold">Session Schedule</h4>
-            <div class="flex flex-wrap gap-2 rounded">
-              <button class="btn-tab active">01 September , 2019</button>
-              <button class="btn-tab">02 September , 2019</button>
-              <button class="btn-tab">03 September , 2019</button>
+          <!-- tab content  -->
+          <div class="tabbox">
+            <h3 class="text-4xl mb-4">AGENDA - 2023</h3>
+            <ul class="tabs">
+              <li data-tab-target="#tab-1" class="active tab">One</li>
+              <li data-tab-target="#tab-2" class="tab">Two</li>
+              <li data-tab-target="#tab-3" class="tab">Three</li>
+            </ul>
+
+            <div class="tab-content my-5">
+              <div id="tab-1" data-tab-content class="active">
+                <h2 class="text-xl font-medium mb-3">IGCF 2023 - Day Two</h2>
+                <table
+                  class="w-full table-auto border-collapse border border-slate-500"
+                >
+                  <thead>
+                    <tr>
+                      <th class="border border-current py-4 px-10" scope="col">
+                        Time
+                      </th>
+                      <th class="border border-current py-4" scope="col">
+                        Agenda
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="tab-2" data-tab-content>
+                <h2 class="text-xl font-medium mb-3">IGCF 2023 - Day Two</h2>
+                <table
+                  class="w-full table-auto border-collapse border border-slate-500"
+                >
+                  <thead>
+                    <tr>
+                      <th class="border border-current py-4 px-10" scope="col">
+                        Time
+                      </th>
+                      <th class="border border-current py-4" scope="col">
+                        Agenda
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="tab-3" data-tab-content>
+                <h2 class="text-xl font-medium mb-3">IGCF 2023 - Day Two</h2>
+                <table
+                  class="w-full table-auto border-collapse border border-slate-500"
+                >
+                  <thead>
+                    <tr>
+                      <th class="border border-current py-4 px-10" scope="col">
+                        Time
+                      </th>
+                      <th class="border border-current py-4" scope="col">
+                        Agenda
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border border-current px-5">
+                        <p class="font-bold text-center text-base">8.30pm</p>
+                      </td>
+                      <td class="border border-current px-5">
+                        <p class="mb-6 mt-8 text-slate-900">
+                          Innosoft Gulf, the leading Artificial Intelligence and
+                          Big Data Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>: Big Data
+                          Education Center in the
+                          <b>Middle East and North Africa</b>, is very pleased
+                          to invite you, your friends and colleagues to a Free
+                          Seminar on <b>Artificial Intelligence</b>:
+                          <b>Deep Learning and Computer Vision.</b> This event
+                          will be held at our education center in
+                          <b>Dubai Knowledge Park (Block 6, Office F02)</b>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-          <div class="my-5">
-            <p>03:00 PM: Part I - Deep Learning and Computer Vision</p>
-          </div>
+          <!-- tab content  -->
         </div>
         <!--  Left  part  -->
         <!--  Right  part  -->
@@ -238,17 +851,20 @@
       id="drawer-right-example"
       class="drawer-toggle translate-x-full"
       tabindex="-1"
-      aria-labelledby="drawer-right-label">
+      aria-labelledby="drawer-right-label"
+    >
       <h5
         id="drawer-right-label"
-        class="mb-4 inline-flex items-center text-base font-semibold text-gray-500 dark:text-gray-400">
+        class="mb-4 inline-flex items-center text-base font-semibold text-gray-500 dark:text-gray-400"
+      >
         Your Cart Item
       </h5>
       <button
         type="button"
         data-drawer-hide="drawer-right-example"
         aria-controls="drawer-right-example"
-        class="btn btn-xs absolute end-6 top-2.5 mr-9 inline-flex size-8 items-center">
+        class="btn btn-xs absolute end-6 top-2.5 mr-9 inline-flex size-8 items-center"
+      >
         <i class="bi bi-x-lg border text-2xl text-red-600"></i>
         <span class="sr-only">Close menu</span>
       </button>
@@ -265,13 +881,15 @@
               <img
                 class="h-24 w-24 object-cover object-center"
                 src="https://chaldn.com/_mpimage/cadbury-dairy-milk-silk-roast-almond-chocolate-bar-143-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D128513&q=best&v=1&m=400&webp=1"
-                alt="" />
+                alt=""
+              />
               <h2 class="text-lg font-semibold">Alooz Chips</h2>
             </div>
             <div class="flex items-center gap-2">
               <label for="cart-shopping" class="sr-only">Quantity</label>
               <button
-                class="border border-black/50 px-2 py-1 text-lg font-bold">
+                class="border border-black/50 px-2 py-1 text-lg font-bold"
+              >
                 <i class="bi bi-dash"></i>
               </button>
               <input
@@ -279,9 +897,11 @@
                 id="cart-shopping"
                 value="1"
                 class="form-input w-10 py-1.5 text-center"
-                name="cart-shopping" />
+                name="cart-shopping"
+              />
               <button
-                class="border border-black/50 px-2 py-1 text-lg font-bold">
+                class="border border-black/50 px-2 py-1 text-lg font-bold"
+              >
                 <i class="bi bi-plus"></i>
               </button>
             </div>
@@ -297,7 +917,8 @@
         <div class="absolute bottom-10 w-10/12 right-10">
           <a
             href="./productCheckOut.html"
-            class="w-full block rounded-md bg-[#14213D] text-white text-center px-8 py-3">
+            class="w-full block rounded-md bg-[#14213D] text-white text-center px-8 py-3"
+          >
             CheckOut
           </a>
         </div>
@@ -318,7 +939,8 @@
               <img
                 src="./Assets/Image/logo/logo.svg"
                 alt="company log "
-                class="mb-4" />
+                class="mb-4"
+              />
             </a>
             <p class="text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
@@ -388,7 +1010,8 @@
               href="https://www.royex.ae/"
               target="_blank"
               rel="noopener"
-              class="text-red-500 hover:underline underline-offset-4">
+              class="text-red-500 hover:underline underline-offset-4"
+            >
               Royex Technologies
             </a></span
           >
@@ -420,6 +1043,24 @@
 
       scrollBtn.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+    <script>
+      const tabs = document.querySelectorAll("[data-tab-target]");
+      const tabContents = document.querySelectorAll("[data-tab-content]");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const target = document.querySelector(tab.dataset.tabTarget);
+          tabContents.forEach((tabContent) => {
+            tabContent.classList.remove("active");
+          });
+          tabs.forEach((tab) => {
+            tab.classList.remove("active");
+          });
+          tab.classList.add("active");
+          target.classList.add("active");
+        });
       });
     </script>
   </body>
