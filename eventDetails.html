@@ -8,10 +8,203 @@
       href="./Assets/Image/icon.svg"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/output.css" />
 
     <link rel="stylesheet" href="./style/Custom.css" />
-    <link rel="stylesheet" href="./style/tab.css" />
+
+    <style>
+      [data-tab-content] {
+        display: none;
+      }
+
+      .active[data-tab-content] {
+        display: block;
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        border-radius: 5px;
+        /* border: 1px solid rgb(182, 182, 182); */
+        /* overflow: hidden; */
+      }
+
+      .tab:first-child {
+        border-top-left-radius: 5px;
+        border-right: none;
+        border-bottom-left-radius: 5px;
+      }
+
+      .tab:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .tab {
+        transition: all 0.5s ease;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid rgb(227, 227, 227);
+        background-color: white;
+        cursor: pointer;
+        border-right: none;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+      }
+
+      .tab:last-child {
+        border-right: 1px solid rgb(227, 227, 227);
+      }
+
+      .tab:hover,
+      .tab.active {
+        transition: all 0.5s ease;
+        color: #fca311;
+        font-weight: 500;
+        position: relative;
+        border-color: #fca311;
+        border-right: 1px solid #fca311;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+      }
+
+      .tab:hover.tab:last-child {
+        border-right: 1px solid #fca311;
+      }
+      .tab:hover {
+        transition: all 0.5s ease;
+        border-right: none;
+        color: #fca311;
+        border-right: none;
+        font-weight: 500;
+        position: relative;
+        border-color: #fca311;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+      }
+      .tab:hover::before,
+      .tab.active::before {
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        transition: all 0.5s ease;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid #fca311;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+      }
+
+      .tab:hover::after,
+      .tab.active::after {
+        transition: all 0.5s ease;
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #ffffff;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+      }
+
+      .tab-content table {
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .tab-content th:first-child {
+        border-right: 1px solid #ddd;
+        width: 230px;
+      }
+
+      .tab-content th {
+        border-top: #ddd 1px solid;
+        border-left: none;
+      }
+      .tab-content tr:last-child {
+        border-bottom: 1px solid #ddd;
+      }
+      .tab-content td {
+        padding: 20px;
+        border-top: 1px solid #ddd;
+      }
+      .tab-content tbody tr,
+      .tab-content tbody td,
+      .tab-content th {
+        padding: 25px 10px;
+        background-color: white;
+        vertical-align: text-top;
+      }
+
+      .tab-content tbody tr td:first-child {
+        min-width: 200px;
+        text-align: center !important;
+        color: #fca311;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .tab-content tbody tr td:first-child > span {
+        color: black;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 15px;
+      }
+
+      .tab-content tbody tr td:last-child {
+        color: #707070;
+        font-size: 14px;
+        text-align: left;
+        text-wrap: pretty;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 1px;
+      }
+      @media screen and (max-width: 768px) {
+        .tab-content th:first-child {
+          border-right: 1px solid #ddd;
+          width: fit-content !important;
+        }
+        .tab-content tbody tr td:first-child {
+          min-width: 100px !important;
+        }
+        .tab-content tbody tr td:first-child {
+          font-size: 14px;
+        }
+        .tab-content tbody tr td:last-child {
+          font-size: 12px;
+        }
+      }
+    </style>
     <title>EvensPRO - Home</title>
   </head>
   <body>
@@ -214,18 +407,106 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>
+                      <td class="">
                         <p>4 Jul</p>
                         <span>08:00-15:00 </span>
                       </td>
-                      <td>Registration</td>
+                      <td>Registration Lorem ipsum dolor sit amet,</td>
                     </tr>
                     <tr>
                       <td>
                         <p>4 Jul</p>
                         <span>08:00-15:00 </span>
                       </td>
-                      <td>Registration</td>
+                      <td class="table-des">
+                        Registration Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Obcaecati, sunt laudantium. Hic
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>4 Jul</p>
+                        <span>08:00-15:00 </span>
+                      </td>
+                      <td class="table-des">
+                        Registration Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Obcaecati, sunt laudantium. Hic
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>4 Jul</p>
+                        <span>08:00-15:00 </span>
+                      </td>
+                      <td class="table-des">
+                        Registration Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Obcaecati, sunt laudantium. Hic
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">
+                        <p>4 Jul</p>
+                        <span>08:00-15:00 </span>
+                      </td>
+                      <td class="table-des">
+                        Registration Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Obcaecati, sunt laudantium. Hic
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>4 Jul</p>
+                        <span>08:00-15:00 </span>
+                      </td>
+                      <td class="table-des">
+                        Registration Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Obcaecati, sunt laudantium. Hic
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                        voluptate quisquam asperiores ipsam, expedita rerum
+                        dolor cupiditate quo pariatur? Consequatur voluptatibus
+                        placeat aliquid amet, aliquam officiis reprehenderit?
+                      </td>
                     </tr>
                   </tbody>
                 </table>
