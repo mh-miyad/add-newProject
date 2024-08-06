@@ -21,17 +21,44 @@
       scroll-behavior: smooth;
       text-align: center;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+
     }
 
     main {
-      max-width: 1320px;
       margin: 0 auto;
+
+
+    }
+
+    .main {
       background: white;
-      padding: 80px;
       border-radius: 10px;
       text-align: center;
+      position: relative;
+      z-index: 1;
+
+    }
+
+    main::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('./eya.svg');
+      background-position: -340px;
+      background-size: 800px;
+      background-repeat: no-repeat;
+      opacity: 0.04;
+      filter: grayscale(100%) brightness(70%);
+      /* Set the desired opacity */
+      z-index: -1;
+      /* Ensure the pseudo-element stays behind the main content */
+      border-radius: 10px;
+      /* Match the border-radius of the main element */
     }
 
     .title {
@@ -39,12 +66,13 @@
       margin: 0px !important;
       padding: 0px !important;
       color: #14213d;
-      font-weight: 500;
+      font-weight: 600;
     }
 
-    /* .title > .left {
-        color: #fca311;
-      } */
+    .title>.left {
+      color: #BA2228;
+    }
+
     .container>i {
       font-size: 7rem;
       margin-top: -50px !important;
@@ -54,21 +82,26 @@
     }
 
     .btn-home {
-      display: inline-block;
-      border-color: #fca311;
-      color: #fca311;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-color: #BA2228;
+      color: #BA2228;
       background-color: transparent;
       border: 1px solid;
       text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 5px;
+      width: 170px;
+      margin: 0 auto;
+      height: 50px;
+      text-align: center;
       margin-top: 20px;
+      border-radius: 9999px;
       font-weight: 600;
       transition: all 0.3s linear;
     }
 
     .btn-home:hover {
-      background-color: #fca311;
+      background-color: #BA2228;
       color: #fff;
     }
 
@@ -83,23 +116,20 @@
       margin: 0 auto;
       font-weight: 600;
       text-transform: capitalize;
-      color: rgba(0, 233, 120, 0.718);
+      color: #1A1817;
       text-align: center;
       margin-top: -10px;
-    }
-
-    .message-sub {
-      font-size: 1rem;
-      font-weight: 600;
-      text-transform: capitalize;
-      color: #14213d;
-      margin-top: -10px;
-
-      text-align: center;
     }
 
     /*  responsive Design */
     @media screen and (max-width: 768px) {
+
+
+      .container>i {
+        font-size: 4rem;
+        margin-bottom: -10px !important;
+      }
+
       .title {
         font-size: 50px;
       }
@@ -109,19 +139,21 @@
 </head>
 
 <body>
-  <main class="main">
-    <div class="container">
-      <i class="bi bi-check-circle"></i>
-      <h2 class="title"><span class="left">Thank</span> You !</h2>
-      <p class="message">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt saepe reiciendis nobis officiis architecto
-        Odit?
-      </p>
+  <main>
+    <section class="main">
+      <div class="container">
+        <i class="bi bi-check-circle"></i>
+        <h2 class="title"><span class="left">Thank</span> You !</h2>
+        <p class="message">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt saepe reiciendis nobis officiis architecto
+          Odit?
+        </p>
 
-      <a href="#" class="btn-home">
-        <span>Back To Home</span>
-      </a>
-    </div>
+        <a href="#" class="btn-home">
+          <span>Back To Home</span>
+        </a>
+      </div>
+    </section>
   </main>
 </body>
 
